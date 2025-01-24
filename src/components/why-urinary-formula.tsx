@@ -1,11 +1,21 @@
 import { config } from "../config";
 
-
 export function WhyUrinaryFormula() {
   return (
     <section className="relative overflow-hidden bg-[#FAF3E1] py-16 ">
-      <div className="absolute inset-0 bg-gradient-to-b from-white/10 to-transparent"></div>
-      <div className="max-w-6xl mx-auto px-4">
+      <h3 className="title text-maroon">
+        Why Advance Urinary Formula?
+      </h3>
+      <p className="text-balance pb-4 text-center text-black  text-2xl text-semibold md:text-[34px]">
+        Harness the Power of 
+        Advance<br />Urinary Formula
+      </p>
+      <p className="mx-auto max-w-[65ch] text-black text-pretty px-2 text-center font-semibold leading-relaxed md:text-xl">
+        Becasue it's A Guaranteed Remedy that helps RE-BUILD your bladder
+        muscles from the Inside out.
+      </p>
+      <div className="absolute inset-0 bg-gradient-to-b mt-5 from-white/10 to-transparent"></div>
+      <div className="mx-auto max-w-6xl px-4 mt-8">
         <div className="relative grid items-center gap-8 md:grid-cols-2 lg:gap-16">
           <div className="relative">
             <div className="absolute -right-24 -top-24 h-[500px] w-[500px] rounded-full bg-white/50 blur-3xl"></div>
@@ -27,7 +37,7 @@ export function WhyUrinaryFormula() {
             {config.whyUrinaryFormula.map((item, index) => (
               <div key={index} className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <div className="flex h-12 w-12 items-center text-bold border border-brand-maroon justify-center rounded-full bg-white shadow-sm">
+                  <div className="text-bold flex h-12 w-12 items-center justify-center rounded-full border border-brand-maroon bg-white shadow-sm">
                     <img src={item.icon} alt={item.title} className="h-7 w-7" />
                   </div>
                 </div>

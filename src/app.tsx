@@ -3,7 +3,8 @@ import EcoHelth from "./components/Eco-helth";
 import { Faq } from "./components/faq";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
-import HeartHealthySection from "./components/HeartHealthySection";
+// import HeartHealthySection from "./components/HeartHealthySection";
+import LandingSection from "./components/LandingProducts";
 import { Packages } from "./components/packages";
 import { TheProblem } from "./components/the-problem";
 import { TheSolution } from "./components/the-solution";
@@ -20,8 +21,9 @@ export function App() {
       <WhyUrinaryFormula />
       <EcoHelth/>
       <WhyItWorks />
+      <LandingSection/>
       <Packages />
-      <HeartHealthySection />
+      {/* <HeartHealthySection /> */}
       <Faq />
       <Footer />
     </div>

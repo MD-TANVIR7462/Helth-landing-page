@@ -3,7 +3,7 @@ import { config } from "../config";
 
 export function TheSolution() {
   return (
-    <section className=" mx-auto mb-20 max-w-md lg:max-w-6xl">
+    <section className=" mx-auto p-fit mb-16 md:mb-20 max-w-md lg:max-w-6xl">
       <h3 className="title">
         The Solution
       </h3>
