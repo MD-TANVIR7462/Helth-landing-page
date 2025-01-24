@@ -8,9 +8,9 @@ import { SalesBadge } from "./sales-badge";
 export function Banner() {
   return (
     <section className="full-width grid-containerxl mb-20 bg-gradient-to-r from-[#FAF3E1] to-yellow-200/40">
-      <div className="md:gird-cols-2 relative grid items-center justify-center justify-items-center gap-y-8 py-14 pt-10 text-center md:gap-x-10 md:gap-y-6 md:text-start lg:grid-cols-[75%_1fr] lg:justify-items-start">
-        <div className="flex flex-wrap items-center justify-center gap-x-3 rounded-full border bg-white px-4 py-2 text-sm font-bold shadow-lg md:py-1 md:text-base">
-          <span className="flex items-center">
+      <div className="md:gird-cols-2 relative grid items-center justify-center justify-items-center gap-y-0 py-14 pt-10 text-center md:gap-x-10 md:gap-y-6 md:text-start lg:grid-cols-[75%_1fr] lg:justify-items-start">
+        <div className="mb-6 md:my-0 flex flex-wrap items-center justify-center gap-x-3 rounded-full border bg-white px-4 py-2 text-sm font-bold shadow-lg md:py-1 md:text-base">
+          <span className="flex items-center ">
             {Array.from({ length: 5 }).map((_, index) => (
               <IoMdStar
                 className="-ms-1 size-[1.675rem] text-[#e5c729]"
@@ -21,7 +21,7 @@ export function Banner() {
           <span>4.7/5 stars</span>
           <span>859 verified reviews</span>
         </div>
-        <p className="max-w-[70%] text-wrap text-[1.5rem] font-black leading-[1.2] text-[#8e2253] md:col-start-1 lg:text-[44px] lg:leading-[1.25]">
+        <p className="max-w-[90%] md:max-w-[70%] text-wrap text-[1.5rem] font-black leading-[1.2] text-[#8e2253] md:col-start-1 lg:text-[44px] lg:leading-[1.25]">
           BLADDER-BUILDING Super Nutrient
           <span className="text-neutral-dark"> for </span> LEAK FREE days
           <span className="text-neutral-dark"> and </span>
@@ -42,19 +42,19 @@ export function Banner() {
             </li>
           ))}
         </ul>
-        <SalesBadge className="row-start-7 md:row-start-3 lg:row-start-5" />
-        <CartBadge className="row-start-8 text-center md:row-start-4 lg:row-start-6" />
+        <SalesBadge className="row-start-7 md:row-start-3 lg:row-start-5 my-6 md:my-0" />
+        <CartBadge className="row-start-8 text-center md:row-start-4 lg:row-start-6 mb-6 md:my-0" />
 
         <AddToCartButton className="col-span-full row-start-4 md:row-start-5 lg:col-span-1 lg:col-start-1 lg:row-start-7" />
-        <OffersBadge className="col-span-full row-start-5 md:row-start-6 lg:col-span-1 lg:col-start-1 lg:row-start-8" />
-        <div className="right-0 top-1/2 row-start-3 max-w-[40rem] md:col-start-2 md:row-span-4 md:row-start-1 lg:absolute lg:row-span-8 lg:w-[min(52vw,_45rem)] lg:max-w-none lg:-translate-y-1/2">
+        <OffersBadge className="col-span-full row-start-5 md:row-start-6 lg:col-span-1 lg:col-start-1 lg:row-start-8 my-6 md:my-0"  />
+        <div className="right-0 top-1/2 row-start-3 max-w-[40rem]  md:col-start-2 md:row-span-4 md:row-start-1 lg:absolute lg:row-span-8 lg:w-[min(52vw,_45rem)] lg:max-w-none lg:-translate-y-1/2">
           <img
-            className="h-auto max-h-[60vh] w-full object-cover object-center md:max-h-[70vh] lg:max-h-[85vh] xl:h-[700px]"
+            className="h-auto  max-h-[60vh] w-full object-cover object-center md:max-h-[70vh] lg:max-h-[85vh] xl:h-[700px]"
             src="/images/pngheroo.png"
             alt="banner image"
           />
         </div>
-        <picture className="left-[35%] top-[42%] col-span-full max-w-[16rem] lg:absolute lg:max-w-20">
+        <picture className="left-[35%] top-[42%] col-span-full max-w-[16rem] lg:absolute lg:max-w-20 ">
           <source
             media="(min-width:64rem)"
             srcSet="/icons/icon-manufacturer-vertical.webp"

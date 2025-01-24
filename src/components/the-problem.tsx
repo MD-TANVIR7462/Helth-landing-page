@@ -11,7 +11,7 @@ export function TheProblem() {
       </p>
       <div className="grid gap-6 md:gap-8 lg:grid-cols-2 lg:items-center">
         <img
-          className="rounded-lg w-[92%] h-[82%] mx-auto"
+          className="rounded-lg md:w-[92%] md:h-[82%] mx-auto"
           src="/images/problem.png"
           alt="problem section image"
         />

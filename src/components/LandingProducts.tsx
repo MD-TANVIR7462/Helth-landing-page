@@ -3,7 +3,7 @@ const LandingSection = () => {
     {
       id: 1,
       name: "Pumpkin Seed Extract",
-      image: "/public/images/1.png",
+      image: "/images/1.png",
       benefits: [
         "Strengthens pelvic floor muscles for better bladder control",
         "Increases urinary frequency and urgency by up to 40%",
@@ -13,7 +13,7 @@ const LandingSection = () => {
     {
       id: 2,
       name: "Horsetail Extract",
-      image: "/public/images/2.png",
+      image: "/images/2.png",
       benefits: [
         "Enhances connective tissue integrity with silica",
         "Improves urinary flow and bladder function by 15%",
@@ -23,7 +23,7 @@ const LandingSection = () => {
     {
       id: 3,
       name: "Punarnava Extract",
-      image: "/public/images/3.png",
+      image: "/images/3.png",
       benefits: [
         "Supports kidney health and reduces fluid retention",
         "Promotes healthy urination patterns",
@@ -33,7 +33,7 @@ const LandingSection = () => {
     {
       id: 4,
       name: "Soy Germ Extract",
-      image: "/public/images/4.png",
+      image: "/images/4.png",
       benefits: [
         "Isoflavones improve bladder strength and hormonal balance",
         "Reduces urinary issues in post-menopausal women",
@@ -43,7 +43,7 @@ const LandingSection = () => {
     {
       id: 5,
       name: "Veld Grape Extract",
-      image: "/public/images/5.png",
+      image: "/images/5.png",
       benefits: [
         "Strengthens connective tissues for bladder health",
         "Reduces inflammation and irritation",
@@ -53,7 +53,7 @@ const LandingSection = () => {
     {
       id: 6,
       name: "Piperine",
-      image: "/public/images/6.png",
+      image: "/images/6.png",
       benefits: [
         "Boosts urinary health by reducing fluid retention",
         "Anti-inflammatory benefits for healthy urination",
@@ -63,7 +63,7 @@ const LandingSection = () => {
   ];
   return (
     <section className="bg-blueGray-50 relative mx-auto max-w-7xl bg-gray-100/30">
-      <div className="min-h-screen-75 relative flex h-[550px] content-center items-center justify-center">
+      <div className="min-h-screen-75 relative flex h-[400px] md:h-[550px] content-center items-center justify-center">
         <div
           className="absolute top-0 h-full w-full rounded-3xl bg-cover bg-center"
           style={{
@@ -79,7 +79,7 @@ const LandingSection = () => {
           <div className="flex flex-wrap items-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-6/12">
               <div className="">
-                <h1 className="text-3xl font-semibold text-white">
+                <h1 className="text-2xl md:text-3xl font-semibold text-white">
                   NATURES BEST INGREDIENTS
                   <br />
                   Harness the power of nature’s best
@@ -125,11 +125,11 @@ const LandingSection = () => {
                     alt=""
                     className="z-10 h-40 w-full rounded-2xl object-cover"
                   />
-                  <h6 className="pt-3 text-xl font-bold">{ingredi.name}</h6>
+                  <h6 className="pt-3 text-xl font-bold pl-3">{ingredi.name}</h6>
                   <p className="text-blueGray-500 mb-4 mt-2 p-4 text-start">
                     {ingredi.benefits.map((ben, index) => {
                       return (
-                        <li
+                        <li 
                           style={{
                             listStylePosition: "inside",
                             paddingLeft: "1rem",

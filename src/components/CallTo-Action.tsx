@@ -8,7 +8,7 @@ const CallToAction = () => {
           "rounded-[40px] bg-center px-4 py-12 text-center text-white shadow-lg sm:px-6 md:px-12 md:py-16",
         )}
         style={{
-          backgroundImage: "url('/public/images/tryecobg.png')",
+          backgroundImage: "url('/images/tryecobg.png')",
         }}
       >
         <div className="mx-auto max-w-3xl">
@@ -33,7 +33,7 @@ const CallToAction = () => {
           <div className="mt-8 grid grid-cols-2 gap-6 sm:mt-10 sm:grid-cols-3 sm:gap-8">
             <div className="flex items-center justify-center">
               <img
-                src="/public/icons/CallToAction/secure.svg"
+                src="/icons/CallToAction/secure.svg"
                 alt="100% Secure Checkout"
                 className="mr-3 h-10 w-10"
               />
@@ -45,7 +45,7 @@ const CallToAction = () => {
             </div>
             <div className="flex items-center justify-center">
               <img
-                src="/public/icons/CallToAction/delevry.svg"
+                src="/icons/CallToAction/delevry.svg"
                 alt="Ships in 1 Business Day"
                 className="mr-3 h-10 w-10"
               />
@@ -56,7 +56,7 @@ const CallToAction = () => {
             </div>
             <div className="flex items-center justify-center">
               <img
-                src="/public/icons/CallToAction/Frame.svg"
+                src="/icons/CallToAction/Frame.svg"
                 alt="90-Day Guarantee"
                 className="mr-3 h-10 w-10"
               />

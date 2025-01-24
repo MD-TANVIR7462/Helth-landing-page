@@ -3,13 +3,13 @@ import { config } from "../config";
 export function WhyUrinaryFormula() {
   return (
     <section className="relative overflow-hidden bg-[#FAF3E1] py-16">
-      <h3 className="title text-maroon">Why Advance Urinary Formula?</h3>
+      <h3 className="text-maroon text-balance pb-4 text-center text-[26px] font-black  md:text-4xl">Why Advance Urinary Formula?</h3>
       <p className="text-semibold text-balance pb-4 text-center text-2xl text-black md:text-[34px]">
         Harness the Power of Advance
         <br />
         Urinary Formula
       </p>
-      <p className="mx-auto max-w-[65ch] text-pretty px-2 text-center font-semibold leading-relaxed text-black md:text-xl">
+      <p className="mx-auto max-w-[65ch] text-pretty  text-center font-semibold leading-relaxed text-black md:text-xl px-3">
         Becasue it's A Guaranteed Remedy that helps RE-BUILD your bladder
         muscles from the Inside out.
       </p>
@@ -21,7 +21,7 @@ export function WhyUrinaryFormula() {
             <div className="absolute -bottom-24 -right-24 h-[400px] w-[400px] rounded-full bg-orange-100/40 blur-3xl"></div>
             <div className="relative aspect-square">
               <img
-                src="/public/images/multiple-bottle.png"
+                src="/images/multiple-bottle.png"
                 alt="Urinary Formula Product"
                 className="relative z-10 h-full w-full object-cover"
               />

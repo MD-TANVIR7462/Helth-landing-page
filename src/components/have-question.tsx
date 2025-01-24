@@ -1,13 +1,13 @@
 function HaveAquestion() {
   return (
-    <div className="relative mx-auto w-full bg-[url(/public/images/calltoactionbg.png)] text-white">
+    <div className="relative mx-auto w-full bg-[url(/images/calltoactionbg.png)] text-white">
       <div className="container relative mx-auto px-4 py-12 sm:py-16 lg:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             {/* Left section with text */}
             <div className="space-y-6 text-left">
               <div className="space-y-2">
-                <h1 className="text-2xl md:text-3xl font-bold leading-tight">
+                <h1 className="text-2xl font-bold leading-tight md:text-3xl">
                   Have Questions? We're Here to Help!
                 </h1>
                 <p className="text-2xl md:text-3xl">
@@ -20,7 +20,7 @@ function HaveAquestion() {
                   Act quickly—these are selling fast! 🔥 XX sold in the past
                   hour.
                 </p>
-                <p className="max-w-[400px] text-[18px] md:text-[22px] leading-8">
+                <p className="max-w-[400px] text-[18px] leading-8 md:text-[22px]">
                   Stock is limited due to high demand, so availability cannot be
                   guaranteed.
                 </p>
@@ -32,14 +32,14 @@ function HaveAquestion() {
 
             {/* Right section with image */}
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              <div className="relative aspect-square ">
+              <div className="relative aspect-square">
                 <img
-                  src="/public/images/call.jpg"
-                  className="h-full w-full object-cover rounded-full"
+                  src="/images/call.jpg"
+                  className="h-full w-full rounded-full object-cover"
                   alt="Image"
                 />
                 {/* Circle at the top-right corner */}
-                <div className="absolute  right-4 top-4 h-16 w-16 rounded-full bg-brand-maroon z-10" />
+                <div className="absolute right-[8%] md:right-[16%] top-4 z-10 h-16 w-16 rounded-full bg-brand-maroon" />
               </div>
             </div>
           </div>

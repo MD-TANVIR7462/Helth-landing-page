@@ -8,7 +8,7 @@ const SellingFast = () => {
           "rounded-[40px] bg-center px-4 py-12 text-center text-white shadow-lg sm:px-6 md:px-12 md:py-16",
         )}
         style={{
-          backgroundImage: "url('/public/images/tryecobg.png')",
+          backgroundImage: "url('/images/tryecobg.png')",
         }}
       >
         <div className="mx-auto max-w-3xl">
