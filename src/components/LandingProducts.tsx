@@ -112,41 +112,44 @@ const LandingSection = () => {
       </div>
 
       <section className="bg-blueGray-200 -mt-24 pb-10">
-        <div className="container mx-auto px-4">
-          <div className="grid  grid-">
-            {ingredients.map((ingredi, index) => {
-              return (
-                <div
-                  key={index}
-                  className="w-full rounded-2xl px-4 pt-6 text-center md:w-4/12 lg:pt-12"
-                >
-                  <div className="relative mb-8 flex w-full min-w-0 flex-col rounded-2xl bg-white shadow-lg">
-                      <img src={ingredi.image} alt="" className="rounded-2xl object-cover bg-cover" />
-                      <h6 className="pt-3 text-xl font-bold">{ingredi.name}</h6>
-                      <p className="text-blueGray-500 mb-4 mt-2 p-4 text-start h-[19vh] max-h-[200px]">
-                        {ingredi.benefits.map((ben, index) => {
-                          return (
-                            <li 
-                              style={{
-                                listStylePosition: "inside",
-                                paddingLeft: "1rem",
-                                textIndent: "-1.5rem",
-                                fontWeight:"500"
-                              }}
-                              key={index}
-                            >
-                              {ben}
-                            </li>
-                          );
-                        })}
-                      </p>
-                  </div>
-                </div>
-              );
-            })}
+  <div className="container mx-auto px-4">
+    <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      {ingredients.map((ingredi, index) => {
+        return (
+          <div
+            key={index}
+            className="flex flex-col rounded-2xl bg-white shadow-lg"
+          >
+            <img
+              src={ingredi.image}
+              alt=""
+              className="h-40 w-full rounded-2xl object-cover z-10"
+            />
+            <h6 className="pt-3 text-xl font-bold">{ingredi.name}</h6>
+            <p className="text-blueGray-500 mb-4 mt-2 p-4 text-start">
+              {ingredi.benefits.map((ben, index) => {
+                return (
+                  <li
+                    style={{
+                      listStylePosition: "inside",
+                      paddingLeft: "1rem",
+                      textIndent: "-1.5rem",
+                      fontWeight: "500",
+                    }}
+                    key={index}
+                  >
+                    {ben}
+                  </li>
+                );
+              })}
+            </p>
           </div>
-        </div>
-      </section>
+        );
+      })}
+    </div>
+  </div>
+</section>
+
     </section>
   );
 };

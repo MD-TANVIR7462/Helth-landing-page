@@ -1,4 +1,5 @@
 import { Banner } from "./components/banner";
+import CallToAction from "./components/CallTo-Action";
 import EcoHelth from "./components/Eco-helth";
 import { Faq } from "./components/faq";
 import { Footer } from "./components/footer";
@@ -18,6 +19,7 @@ export function App() {
       <Banner />
       <TheProblem />
       <TheSolution />
+      <CallToAction/>
       <WhyUrinaryFormula />
       <EcoHelth/>
       <WhyItWorks />
