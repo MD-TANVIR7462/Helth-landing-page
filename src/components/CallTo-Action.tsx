@@ -1,54 +1,76 @@
+import { twMerge } from "tailwind-merge";
+
 const CallToAction = () => {
-   return (
-     <section className="py-8 px-6">
-       <div className="container mx-auto max-w-6xl rounded-lg bg-teal-800 p-6 text-center text-white shadow-lg">
-         {/* Heading */}
-         <h2 className="text-2xl font-bold sm:text-3xl">
-           Try Eco Health® Advance Urinary Formula Risk Free for 90 Days
-         </h2>
-         {/* Description */}
-         <p className="mt-4 text-sm sm:text-base">
-           Eco Health® Advance Urinary Formula is a premium, doctor-formulated blend designed to
-           support bladder health and urinary function. This comprehensive formula combines clinically
-           supported ingredients to enhance bladder control and promote urinary comfort.
-         </p>
-         {/* CTA Button */}
-         <div className="mt-6">
-           <button className="rounded-lg bg-[#B11E54] px-6 py-3 text-white hover:bg-red-600">
-             ADD TO CART
-           </button>
-         </div>
-         {/* Features */}
-         <div className="mt-6 flex flex-wrap justify-center gap-6">
-           <div className="flex items-center">
-             <img
-               src="/public/icons/sdf/secure.svg"
-               alt="100% Secure Checkout"
-               className="mr-2 h-6 w-6"
-             />
-             <span className="text-sm">100% Secure Checkout</span>
-           </div>
-           <div className="flex items-center">
-             <img
-               src="/public/icons/sdf/delevry.svg"
-               alt="Ships in 1 Business Day"
-               className="mr-2 h-6 w-6"
-             />
-             <span className="text-sm">Ships in 1 Business Day</span>
-           </div>
-           <div className="flex items-center">
-             <img
-               src="/public/icons/sdf/Frame.svg"
-               alt="90-Day Guarantee"
-               className="mr-2 h-6 w-6"
-             />
-             <span className="text-sm">90-Day Guarantee</span>
-           </div>
-         </div>
-       </div>
-     </section>
-   );
- };
- 
- export default CallToAction;
- 
+  return (
+    <div className="mx-auto mb-12 max-w-6xl px-3 sm:px-6 lg:px-8">
+      <div
+        className={twMerge(
+          "bg-center py-12 px-4 sm:px-6 rounded-[40px] text-center text-white shadow-lg md:py-16 md:px-12"
+        )}
+        style={{
+          backgroundImage: "url('/public/images/tryecobg.png')",
+        }}
+      >
+        <div className="mx-auto max-w-3xl">
+          {/* Heading */}
+          <h2 className="mx-auto w-[90%] text-2xl font-bold leading-tight sm:w-[80%] sm:text-3xl md:text-4xl">
+            Try Eco Health® Advance Urinary Formula Risk Free for 90 Days
+          </h2>
+          {/* Paragraph */}
+          <p className="mt-4 text-sm leading-relaxed sm:text-base md:mt-6">
+            Eco Health® Advance Urinary Formula is a premium, doctor-formulated
+            blend designed to support bladder health and urinary function. This
+            comprehensive formula combines clinically supported ingredients to
+            enhance bladder control and promote urinary comfort.
+          </p>
+          {/* Button */}
+          <div className="mt-6">
+            <button className="rounded-full bg-[#B11E54] px-6 py-3 text-sm font-medium text-white   sm:px-8 md:px-20 sm:py-4 sm:text-base">
+              ADD TO CART
+            </button>
+          </div>
+          {/* Features */}
+          <div className="mt-8 grid   gap-6 sm:mt-10 grid-cols-2 sm:grid-cols-3 sm:gap-8">
+            <div className="flex items-center justify-center">
+              <img
+                src="/public/icons/CallToAction/secure.svg"
+                alt="100% Secure Checkout"
+                className="mr-3 h-10 w-10"
+              />
+              <span className="text-sm font-semibold leading-snug sm:text-base">
+                100% Secure
+                <br />
+                Checkout
+              </span>
+            </div>
+            <div className="flex items-center justify-center">
+              <img
+                src="/public/icons/CallToAction/delevry.svg"
+                alt="Ships in 1 Business Day"
+                className="mr-3 h-10 w-10"
+              />
+              <span className="text-sm font-semibold leading-snug sm:text-base">
+                Ships in 1<br />
+                Business Day
+              </span>
+            </div>
+            <div className="flex items-center justify-center">
+              <img
+                src="/public/icons/CallToAction/Frame.svg"
+                alt="90-Day Guarantee"
+                className="mr-3 h-10 w-10"
+              />
+              <span className="text-sm font-semibold leading-snug sm:text-base">
+                90-Day
+                <br />
+                Guarantee
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CallToAction;
