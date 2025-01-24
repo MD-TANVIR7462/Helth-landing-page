@@ -1,5 +1,5 @@
 import { config } from "../config";
-import { SalesBadge } from "./sales-badge";
+// import { SalesBadge } from "./sales-badge";
 
 export function Packages() {
   return (
@@ -65,7 +65,7 @@ export function Packages() {
           </div>
         ))}
       </div>
-      <div className="grid justify-center pt-14 text-center">
+      {/* <div className="grid justify-center pt-14 text-center">
         <SalesBadge />
         <span className="pt-10">Have questions? We can answer them!</span>
         <a className="font-semibold text-brand-lime" href="#">
@@ -74,7 +74,7 @@ export function Packages() {
         <a className="font-semibold text-brand-lime" href="#">
           upport@snapsupplements.com
         </a>
-      </div>
+      </div> */}
     </section>
   );
 }

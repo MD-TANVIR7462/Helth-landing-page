@@ -3,10 +3,11 @@ import CallToAction from "./components/CallTo-Action";
 import EcoHelth from "./components/Eco-helth";
 import { Faq } from "./components/faq";
 import { Footer } from "./components/footer";
+import HaveAquestion from "./components/have-question";
 import { Header } from "./components/header";
-// import HeartHealthySection from "./components/HeartHealthySection";
 import LandingSection from "./components/LandingProducts";
 import { Packages } from "./components/packages";
+import SellingFast from "./components/selligh-false";
 import { TheProblem } from "./components/the-problem";
 import { TheSolution } from "./components/the-solution";
 import { WhyItWorks } from "./components/why-it-works";
@@ -19,14 +20,15 @@ export function App() {
       <Banner />
       <TheProblem />
       <TheSolution />
-      <CallToAction/>
+      <CallToAction />
       <WhyUrinaryFormula />
-      <EcoHelth/>
+      <EcoHelth />
       <WhyItWorks />
-      <LandingSection/>
+      <LandingSection />
       <Packages />
-      {/* <HeartHealthySection /> */}
+      <SellingFast />
       <Faq />
+      <HaveAquestion/>
       <Footer />
     </div>
   );

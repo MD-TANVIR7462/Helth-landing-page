@@ -2,20 +2,19 @@ import { config } from "../config";
 
 export function WhyUrinaryFormula() {
   return (
-    <section className="relative overflow-hidden bg-[#FAF3E1] py-16 ">
-      <h3 className="title text-maroon">
-        Why Advance Urinary Formula?
-      </h3>
-      <p className="text-balance pb-4 text-center text-black  text-2xl text-semibold md:text-[34px]">
-        Harness the Power of 
-        Advance<br />Urinary Formula
+    <section className="relative overflow-hidden bg-[#FAF3E1] py-16">
+      <h3 className="title text-maroon">Why Advance Urinary Formula?</h3>
+      <p className="text-semibold text-balance pb-4 text-center text-2xl text-black md:text-[34px]">
+        Harness the Power of Advance
+        <br />
+        Urinary Formula
       </p>
-      <p className="mx-auto max-w-[65ch] text-black text-pretty px-2 text-center font-semibold leading-relaxed md:text-xl">
+      <p className="mx-auto max-w-[65ch] text-pretty px-2 text-center font-semibold leading-relaxed text-black md:text-xl">
         Becasue it's A Guaranteed Remedy that helps RE-BUILD your bladder
         muscles from the Inside out.
       </p>
-      <div className="absolute inset-0 bg-gradient-to-b mt-5 from-white/10 to-transparent"></div>
-      <div className="mx-auto max-w-6xl px-4 mt-8">
+      <div className="absolute inset-0 mt-5 bg-gradient-to-b from-white/10 to-transparent"></div>
+      <div className="mx-auto mt-8 max-w-7xl px-4">
         <div className="relative grid items-center gap-8 md:grid-cols-2 lg:gap-16">
           <div className="relative">
             <div className="absolute -right-24 -top-24 h-[500px] w-[500px] rounded-full bg-white/50 blur-3xl"></div>

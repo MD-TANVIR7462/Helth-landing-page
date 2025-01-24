@@ -2,10 +2,10 @@ import { twMerge } from "tailwind-merge";
 
 const CallToAction = () => {
   return (
-    <div className="mx-auto mb-12 max-w-6xl px-3 sm:px-6 lg:px-8">
+    <div className="mx-auto mb-12 max-w-7xl px-3 sm:px-6 lg:px-8">
       <div
         className={twMerge(
-          "bg-center py-12 px-4 sm:px-6 rounded-[40px] text-center text-white shadow-lg md:py-16 md:px-12"
+          "rounded-[40px] bg-center px-4 py-12 text-center text-white shadow-lg sm:px-6 md:px-12 md:py-16",
         )}
         style={{
           backgroundImage: "url('/public/images/tryecobg.png')",
@@ -25,12 +25,12 @@ const CallToAction = () => {
           </p>
           {/* Button */}
           <div className="mt-6">
-            <button className="rounded-full bg-[#B11E54] px-6 py-3 text-sm font-medium text-white   sm:px-8 md:px-20 sm:py-4 sm:text-base">
+            <button className="rounded-full bg-[#B11E54] px-6 py-3 text-sm font-medium text-white sm:px-8 sm:py-4 sm:text-base md:px-20">
               ADD TO CART
             </button>
           </div>
           {/* Features */}
-          <div className="mt-8 grid   gap-6 sm:mt-10 grid-cols-2 sm:grid-cols-3 sm:gap-8">
+          <div className="mt-8 grid grid-cols-2 gap-6 sm:mt-10 sm:grid-cols-3 sm:gap-8">
             <div className="flex items-center justify-center">
               <img
                 src="/public/icons/CallToAction/secure.svg"

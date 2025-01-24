@@ -48,7 +48,7 @@ const faqs = [
 
 export function Faq() {
   return (
-    <section className="| mb-20">
+    <section className="mt-20 mb-20 p-fit">
       <h2 className="pb-10 text-center text-3xl font-bold sm:text-5xl">
         Frequently Asked Questions
       </h2>

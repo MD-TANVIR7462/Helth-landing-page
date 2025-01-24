@@ -3,16 +3,16 @@ import { config } from "../config";
 
 export function TheSolution() {
   return (
-    <section className=" mx-auto p-fit mb-16 md:mb-20 max-w-md lg:max-w-6xl">
-      <h3 className="title">
-        The Solution
-      </h3>
+    <section className="p-fit mx-auto mb-16 max-w-md md:mb-20 lg:max-w-7xl">
+      <h3 className="title">The Solution</h3>
       <p className="mx-auto max-w-[65ch] text-pretty px-2 pb-8 text-center font-semibold leading-relaxed md:text-lg">
-      Bye, Buy Bladder Leaks, accidents, discomfort and worries with Eco Health's Advance Urinary Formula. Doctor Formulated with clincaly studied ingredients. Guaranteed to Work!
+        Bye, Buy Bladder Leaks, accidents, discomfort and worries with Eco
+        Health's Advance Urinary Formula. Doctor Formulated with clincaly
+        studied ingredients. Guaranteed to Work!
       </p>
       <div className="grid gap-6 md:gap-8 lg:grid-cols-2 lg:items-center">
         <img
-          className="rounded-lg"
+          className="rounded-lg  w-[92%] h-[84%] mx-auto"
           src="/images/solution.png"
           alt="solution section image"
         />
