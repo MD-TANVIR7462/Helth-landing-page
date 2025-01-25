@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { BsCart3 } from "react-icons/bs";
 import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 
@@ -9,26 +9,28 @@ export function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      
+
       if (currentScrollY > lastScrollY) {
         setIsScrollingDown(true);
       } else {
         setIsScrollingDown(false);
       }
-      
+
       setLastScrollY(currentScrollY);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
   return (
     <>
       {/* Top green navbar - shows when scrolling up */}
-      <header className={`fixed top-0 left-0 right-0 transition-transform duration-300 z-50 ${
-        isScrollingDown ? '-translate-y-full' : 'translate-y-0'
-      }`}>
+      <header
+        className={`fixed left-0 right-0 top-0 z-50 transition-transform duration-300 ${
+          isScrollingDown ? "-translate-y-full" : "translate-y-0"
+        }`}
+      >
         <div className="w-full">
           <div className="min-h-[1.875rem] bg-[#EFEFE9] text-center text-brand-green">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-4">
@@ -49,7 +51,7 @@ export function Header() {
           <div className="bg-brand-green">
             <div className="relative mx-auto flex max-w-7xl items-center justify-end px-4 py-3 text-white lg:min-h-20 lg:py-1">
               <a
-                className="focus:ring absolute right-1/2 translate-x-1/2 p-1 text-2xl"
+                className="absolute right-1/2 translate-x-1/2 p-1 text-2xl focus:ring"
                 href="#"
               >
                 <h1 className="sr-only">Eco Health Funnel</h1>
@@ -68,15 +70,30 @@ export function Header() {
       </header>
 
       {/* Secondary navbar - shows when scrolling down */}
-      <nav className={`fixed top-0 left-0 right-0 bg-white shadow-md transition-transform duration-300 z-40 ${
-        isScrollingDown ? 'translate-y-0' : '-translate-y-full'
-      }`}>
+      <nav
+        className={`fixed left-0 right-0 top-0 z-40 bg-white shadow-md transition-transform duration-300 ${
+          isScrollingDown ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
         <div className="w-full border-b border-gray-200">
-          <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4">
+          <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+            {/* Left Section */}
             <div className="flex items-center gap-4">
               <button className="flex items-center justify-center">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3 12H21M3 6H21M3 18H21"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </button>
               <a href="#" className="text-xl font-bold">
@@ -87,15 +104,23 @@ export function Header() {
                 />
               </a>
             </div>
-            <div className="flex items-center gap-6">
-              <div className="text-right">
-                <div className="text-sm font-medium">Fast Checkout + FREE Shipping</div>
-                <div className="text-sm text-gray-600">90-Day Money Back Guarantee</div>
+            <div className="gap-2 md:flex md:items-center">
+              <div className="hidden md:block">
+                <div className="text-sm font-semibold">
+                  Fast Checkout + FREE Shipping
+                </div>
+                <div className="text-sm text-gray-600">
+                  90-Day Money Back Guarantee
+                </div>
               </div>
-              <button className="rounded-md bg-[#28A745] px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-[#218838] flex items-center gap-2">
-                <span>Add To Cart</span>
-                <span className="text-xs bg-white/20 px-2 py-0.5 rounded">$97</span>
-              </button>
+              <div className="flex items-center gap-4 sm:gap-6">
+                <button className="flex items-center gap-2 rounded-md bg-[#28A745] px-4 py-2 text-xs font-medium text-white transition-colors hover:bg-[#218838] sm:px-6 sm:py-2 sm:text-sm">
+                  <span>Add To Cart</span>
+                  <span className="rounded bg-white/20 px-2 py-0.5 text-xs">
+                    $97
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
