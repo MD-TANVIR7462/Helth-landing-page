@@ -4,8 +4,8 @@ import { config } from "../config";
 export function TheSolution() {
   return (
     <section className="p-fit mx-auto mb-16 max-w-md md:mb-20 lg:max-w-7xl">
-      <h3 className="title">The Solution</h3>
-      <p className="mx-auto max-w-[65ch] text-pretty px-2 pb-8 text-center font-semibold leading-relaxed md:text-lg">
+      <h3 className="title text-[#1f8e2a]">The Solution</h3>
+      <p className="mx-auto max-w-[65ch] text-pretty px-2 pb-6 text-center font-semibold leading-relaxed md:text-lg">
         Bye, Buy Bladder Leaks, accidents, discomfort and worries with Eco
         Health's Advance Urinary Formula. Doctor Formulated with clincaly
         studied ingredients. Guaranteed to Work!

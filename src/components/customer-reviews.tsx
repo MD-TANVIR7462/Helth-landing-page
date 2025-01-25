@@ -10,6 +10,7 @@ const reviews = [
       "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
     review:
       "I loved it except I would like a months of the product rather than getting 6 worth.",
+    img: "/images/old-man-1.jpeg",
   },
   {
     user_name: "Melody O",
@@ -19,6 +20,7 @@ const reviews = [
       "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
     review:
       "I loved it except I would like a months of the product rather than getting 6 worth.",
+    img: "/images/old-man-2.jpeg",
   },
   {
     user_name: "Melody O",
@@ -28,6 +30,7 @@ const reviews = [
       "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
     review:
       "I loved it except I would like a months of the product rather than getting 6 worth.",
+    img: "/images/old-women-1.jpeg",
   },
   {
     user_name: "Melody O",
@@ -37,6 +40,7 @@ const reviews = [
       "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
     review:
       "I loved it except I would like a months of the product rather than getting 6 worth.",
+    img: "/images/old-women-2.jpeg",
   },
   {
     user_name: "Melody O",
@@ -46,21 +50,13 @@ const reviews = [
       "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
     review:
       "I loved it except I would like a months of the product rather than getting 6 worth.",
-  },
-  {
-    user_name: "Melody O",
-    isVerified: true,
-    ratings: 5,
-    title:
-      "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
-    review:
-      "I loved it except I would like a months of the product rather than getting 6 worth.",
+    img: "/images/old-women-3.jpeg",
   },
 ] as const;
 
 export function CustomerReviews() {
   return (
-    <section className="relative mx-auto space-y-4 pt-32 text-center lg:max-w-full">
+    <section className="relative mx-auto max-w-6xl space-y-4 pt-32 text-center p-fit">
       <h3 className="pb-2 text-xl font-bold text-brand-maroon sm:text-2xl">
         Customer Reviews
       </h3>
@@ -82,24 +78,17 @@ export function CustomerReviews() {
         Hear from happy customers on how Nitric Oxide Organic Beets - Mixed
         Berry Flavor improved their life
       </p>
-      <ul className="grid grid-cols-2 gap-4 pt-10 lg:grid-cols-4">
-        {Array.from({ length: 4 }).map((_, index) => (
-          <li
-            key={`video${index}`}
-            className="h-[28rem] rounded-lg bg-black"
-          ></li>
-        ))}
-      </ul>
-      <ul className="divide-y-2 text-start">
-        {reviews.map(({ title, review, ratings, user_name }, index) => (
+      <ul className="divide-y-2 pt-10 text-start">
+        {reviews.map(({ title, review, ratings, user_name, img }, index) => (
           <li
             key={title + index}
             className="grid items-start gap-4 py-10 md:grid-cols-[auto_1fr] md:gap-10"
           >
             <div className="grid grid-cols-[auto_1fr] grid-rows-3 items-start gap-x-4">
-              <div className="row-span-2 row-start-1 flex size-16 items-center justify-center rounded-full bg-orange-600 text-3xl text-white">
-                MO
-              </div>
+              <img
+                className="row-span-2 row-start-1 flex size-16 items-center justify-center rounded-full object-cover"
+                src={img}
+              />
               <div className="pt-2">
                 <h4>{user_name}</h4>
                 <div className="flex items-center gap-x-1 text-sm">

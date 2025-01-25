@@ -95,5 +95,8 @@
   .p-fit {
     @apply px-4 md:px-2 lg:px-0;
   }
+  .test{
+    @apply md:ring-2 md:ring-red-500 lg:ring-3 lg:ring-green-500  xl:ring-4 xl:ring-yellow-600 ;
+  }
   
 }

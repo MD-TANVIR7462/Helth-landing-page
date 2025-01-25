@@ -4,8 +4,8 @@ import { config } from "../config";
 export function TheProblem() {
   return (
     <section className="p-fit mx-auto mb-20 max-w-md lg:max-w-7xl">
-      <h2 className="title">The Problem</h2>
-      <p className="mx-auto max-w-[65ch] text-pretty px-2 pb-8 text-center font-semibold leading-relaxed md:text-lg">
+      <h2 className="title text-brand-maroon">The Problem</h2>
+      <p className="mx-auto max-w-[65ch] text-pretty px-2 pb-6 lg:pb-0 text-center font-semibold leading-relaxed md:text-lg">
         As we age, the intricate network of muscles surrounding the bladder
         weakens often leading these problems.
       </p>

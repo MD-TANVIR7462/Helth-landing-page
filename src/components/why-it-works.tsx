@@ -6,14 +6,14 @@ export function WhyItWorks() {
         Eco Health® Advance Urinary Formula is a premium, doctor-formulated
         blend for bladder health and urinary comfort.
       </h2>
-      <div className="mx-auto mt-2 grid gap-8 lg:grid-cols-2">
+      <div className="mx-auto mt-2 grid gap-8 lg:grid-cols-2 items-center">
         <img
           className="h-full rounded-lg object-cover object-center lg:row-span-2"
           src="/images/img-why-it-works-section.webp"
           alt=""
         />
         <div>
-          <h3 className="pb-2 text-2xl font-bold sm:text-2xl lg:pb-4">
+          <h3 className="pb-2 text-2xl font-bold sm:text-3xl lg:pb-4">
             Advanced Urinary Formula
           </h3>
           <p className="text-pretty leading-relaxed">
@@ -24,7 +24,7 @@ export function WhyItWorks() {
           </p>
         </div>
         <div className="lg:col-start-2">
-          <h3 className="pb-2 text-2xl font-bold sm:text-2xl lg:pb-4">
+          <h3 className="pb-2 text-2xl font-bold sm:text-3xl lg:pb-4">
             Doctor Formulated and Premium Ingredients
           </h3>
           <p className="text-pretty leading-relaxed">
