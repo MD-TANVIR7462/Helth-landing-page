@@ -1,6 +1,6 @@
 export function WhyItWorks() {
   return (
-    <section className="p-fit mx-auto mb-20 max-w-7xl">
+    <section className="p-fit mx-auto  max-w-7xl">
       <h2 className="title">Why It Works</h2>
       <h2 className="mx-auto max-w-[65ch] text-pretty px-2 pb-8 text-center font-semibold leading-relaxed md:text-lg">
         Eco Health® Advance Urinary Formula is a premium, doctor-formulated

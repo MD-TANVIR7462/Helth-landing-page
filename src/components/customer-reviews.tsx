@@ -56,7 +56,7 @@ const reviews = [
 
 export function CustomerReviews() {
   return (
-    <section className="relative mx-auto my-12 max-w-6xl space-y-4 p-4 text-center lg:p-6">
+    <section className="relative mx-auto max-w-6xl space-y-2 p-4 text-center lg:p-6">
       <p className="mx-auto max-w-[60ch] text-2xl font-black leading-snug md:text-3xl lg:text-4xl">
         Trusted by Thousands of Customers
       </p>
@@ -64,7 +64,7 @@ export function CustomerReviews() {
         Hear from happy customers on how Nitric Oxide Organic Beets - Mixed
         Berry Flavor improved their life
       </p>
-      <ul className="divide-y divide-gray-200 text-start md:pt-8">
+      <ul className="divide-y divide-gray-200 text-start md:pt-5">
         {reviews.map(({ title, review, ratings, user_name, img }, index) => (
           <li
             key={title + index}

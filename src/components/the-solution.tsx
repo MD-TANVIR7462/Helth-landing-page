@@ -3,7 +3,7 @@ import { config } from "../config";
 
 export function TheSolution() {
   return (
-    <section className="p-fit mx-auto mb-16 max-w-md md:mb-20 lg:max-w-7xl">
+    <section className="p-fit mx-auto  max-w-md  lg:max-w-7xl">
       <h3 className="title text-[#1f8e2a]">The Solution</h3>
       <p className="mx-auto max-w-[65ch] text-pretty px-2 pb-6 text-center font-semibold leading-relaxed md:text-lg">
         Bye, Buy Bladder Leaks, accidents, discomfort and worries with Eco
@@ -12,7 +12,7 @@ export function TheSolution() {
       </p>
       <div className="grid gap-6 md:gap-8 lg:grid-cols-2 lg:items-center">
         <img
-          className="rounded-lg  md:w-[92%] md:h-[84%] mx-auto"
+          className="rounded-lg  lg:w-[92%] lg:h-[84%] mx-auto"
           src="/images/solution.png"
           alt="solution section image"
         />

@@ -1,80 +1,169 @@
-import { config } from "../config";
-// import { SalesBadge } from "./sales-badge";
+import { useState } from "react";
+
+type SubscriptionType = "subscribe" | "onetime";
+type PackageOption = "1bottle" | "3plus2" | "2plus1";
+
+interface PackageState {
+  subscriptionType: SubscriptionType;
+}
 
 export function Packages() {
+  const [packageStates, setPackageStates] = useState<
+    Record<PackageOption, PackageState>
+  >({
+    "1bottle": { subscriptionType: "subscribe" },
+    "3plus2": { subscriptionType: "subscribe" },
+    "2plus1": { subscriptionType: "subscribe" },
+  });
+
+  // const calculatePrice = (basePrice: number, isSubscription: boolean) => {
+  //   return isSubscription ? basePrice * 0.85 : basePrice; // 15% discount for subscription
+  // };
+
+  const packages = {
+    "1bottle": {
+      title: "1 Bottle",
+      label: "Good Value",
+      basePrice: 149.85,
+      subscribePrice: 84.91,
+      onetimePrice: 99.9,
+      savings: "$64.94",
+      popular: false,
+      grate:false,
+      image:"/images/package1.png"
+
+    },
+    "3plus2": {
+      title: "Buy 3, Get 2 Free!",
+      label: "Most Popular",
+      basePrice: 149.85,
+      subscribePrice: 84.91,
+      onetimePrice: 99.9,
+      savings: "$64.94",
+      popular: true,
+      grate:false,
+      image:"/images/package2.png"
+
+    },
+    "2plus1": {
+      title: "Buy 2, Get 1 Free!",
+      label: "Great Value",
+      basePrice: 149.85,
+      subscribePrice: 84.91,
+      onetimePrice: 99.9,
+      savings: "$64.94",
+      popular: false,
+      grate:true,
+      image:"/images/package3.png"
+
+    },
+  };
+
+  const handleSubscriptionChange = (
+    packageKey: PackageOption,
+    type: SubscriptionType,
+  ) => {
+    setPackageStates((prev) => ({
+      ...prev,
+      [packageKey]: { ...prev[packageKey], subscriptionType: type },
+    }));
+  };
+
   return (
-    <section className="| mx-auto mb-20 max-w-5xl">
-      <h2 className="pb-5 text-center text-3xl font-bold text-brand-green sm:text-5xl">
-        Choose Your Package
-      </h2>
-      <div className="grid justify-center gap-20 pt-20 lg:grid-cols-3 lg:gap-5">
-        {config.packages.map(({ name, title, image }, index) => (
+    <div className="max-w-7xl mx-auto bg-white px-4 py-12">
+      <div className="mb-12 text-center">
+        <h1 className="mb-2 text-4xl font-bold text-gray-900">
+          Choose Your Package
+        </h1>
+        <p className="text-xl text-gray-600">Your Pathway to Bladder Health</p>
+      </div>
+      <div className="mx-auto grid max-w-7xl grid-cols-1 sm:mx-12 md:mx-2 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {Object.entries(packages).map(([key, pkg]) => (
           <div
-            key={`package${index}`}
-            className="relative grid gap-2 rounded-xl border px-4 pb-8 pt-4 text-center shadow-sm"
+            key={key}
+            className="relative overflow-hidden rounded-xl border  border-gray-200 bg-white shadow-lg"
           >
-            <div className="absolute top-0 flex h-12 w-full -translate-y-full items-center justify-center rounded-t-lg bg-brand-lime text-center font-semibold text-white">
-              {name}
+            <div
+              className={`w-full py-2 text-center font-bold  text-lg  ${pkg.popular||pkg?.grate ? "bg-green-600 text-white" : "text-black"}`}
+            >
+              {pkg.label}
             </div>
-            <h3 className="text-balance text-4xl font-bold tracking-tight">
-              {title}
-            </h3>
-            <span className="block text-sm font-semibold italic text-brand-lime">
-              Instant Savings $64.94
-            </span>
-            <img className="mx-auto max-w-40 py-4" src={image} alt={name} />
-            <span className="text-5xl font-bold">$28.30</span>
-            <span className="font-bold">Per canister</span>
-            <span className="pb-4 text-xl font-bold uppercase opacity-60">
-              REGULARLY <span className="line-through">$149.85</span>
-            </span>
-            <div className="flex items-center gap-x-2 text-start">
-              <input type="radio" className="size-5 accent-black" />
-              <label
-                className="flex w-full items-center justify-between"
-                htmlFor=""
-              >
-                <span>Subscribe & Save 15%</span>
-                <div className="font-semibold">
-                  <span className="text-brand-lime">
-                    $84.91
-                    <span />
-                    <span className="line-through opacity-60">$149.85</span>
+            <div className="p-6">
+              <h2 className="mb-2 text-center text-2xl font-bold text-gray-800">
+                {pkg.title}
+              </h2>
+              <p className="mb-6 text-center text-gray-600">
+                Instant Savings {pkg.savings}
+              </p>
+<img src={pkg?.image} alt="" />
+              <div className="mb-6 text-center">
+                <div className="text-4xl font-bold text-gray-900">$28.30</div>
+                <div className="text-sm text-gray-600">Per Canister</div>
+                <div className="mt-1 text-sm text-gray-500">
+                  REGULARLY ${pkg.basePrice}
+                </div>
+              </div>
+
+              <div className="mb-6 space-y-3">
+                <label className="flex cursor-pointer items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <div className="flex items-center">
+                    <input
+                      type="radio"
+                      name={`subscription-${key}`}
+                      checked={
+                        packageStates[key as PackageOption].subscriptionType ===
+                        "subscribe"
+                      }
+                      onChange={() =>
+                        handleSubscriptionChange(
+                          key as PackageOption,
+                          "subscribe",
+                        )
+                      }
+                      className="h-4 w-4 text-green-600"
+                    />
+                    <span className="ml-2">Subscribe & Save 15%</span>
+                  </div>
+                  <span className="font-semibold text-green-600">
+                    ${pkg.subscribePrice}
                   </span>
+                </label>
+                <div className="ml-6 text-sm text-gray-500">
+                  Deliver Every month
                 </div>
-              </label>
+
+                <label className="flex cursor-pointer items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <div className="flex items-center">
+                    <input
+                      type="radio"
+                      name={`subscription-${key}`}
+                      checked={
+                        packageStates[key as PackageOption].subscriptionType ===
+                        "onetime"
+                      }
+                      onChange={() =>
+                        handleSubscriptionChange(
+                          key as PackageOption,
+                          "onetime",
+                        )
+                      }
+                      className="h-4 w-4 text-green-600"
+                    />
+                    <span className="ml-2">One-time</span>
+                  </div>
+                  <span className="font-semibold text-green-600">
+                    ${pkg.onetimePrice}
+                  </span>
+                </label>
+              </div>
+
+              <button className="w-full rounded-lg bg-green-600 px-4 py-3 text-lg font-semibold text-white transition-colors hover:bg-green-700 lg:text-xl">
+                ADD TO CART
+              </button>
             </div>
-            <div className="flex items-center gap-x-2 text-start">
-              <input type="radio" className="size-5 accent-black" />
-              <label
-                className="flex w-full items-center justify-between"
-                htmlFor=""
-              >
-                <span>One-time</span>
-                <div className="font-semibold">
-                  <span className="text-brand-lime">$99.90</span>
-                  <span className="line-through opacity-60">$149.85</span>
-                </div>
-              </label>
-            </div>
-            <button className="mt-5 h-14 w-full rounded-md bg-brand-lime text-xl font-bold text-white">
-              Add To Cart
-            </button>
-            <span className="font-bold">Total: $99.90 + FREE Shipping</span>
-            <span className="text-sm italic">90-day money-back guaranteed</span>
           </div>
         ))}
       </div>
-      {/* <div className="grid justify-center pt-14 text-center">
-        <SalesBadge />
-        <span className="pt-10">Have questions? We can answer them!</span>
-        <a className="font-semibold text-brand-lime" href="#">
-          (888) 491-5043
-        </a>
-        <a className="font-semibold text-brand-lime" href="#">
-          upport@snapsupplements.com
-        </a>
-      </div> */}
-    </section>
+    </div>
   );
 }

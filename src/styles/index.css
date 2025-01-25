@@ -98,5 +98,8 @@
   .test{
     @apply md:ring-2 md:ring-red-500 lg:ring-4 lg:ring-green-500  xl:ring-4 xl:ring-yellow-600 ;
   }
+  .secGap{
+    @apply my-12 md:my-16 xl:my-20 ;
+  }
   
 }

@@ -2,7 +2,7 @@ import { twMerge } from "tailwind-merge";
 
 const SellingFast = () => {
   return (
-    <div className="mx-auto mb-12 max-w-7xl px-3 sm:px-6 lg:px-8">
+    <div className="mx-auto  max-w-7xl px-3 sm:px-6 lg:px-8">
       <div
         className={twMerge(
           "rounded-[40px] bg-center px-4 py-12 text-center text-white shadow-lg sm:px-6 md:px-12 md:py-16",

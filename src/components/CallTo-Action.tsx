@@ -2,7 +2,7 @@ import { twMerge } from "tailwind-merge";
 
 const CallToAction = () => {
   return (
-    <div className="mx-auto mb-12 max-w-7xl px-3 sm:px-6 lg:px-8">
+    <div className="mx-auto secGap max-w-7xl px-3 sm:px-6 lg:px-8">
       <div
         className={twMerge(
           "rounded-[40px] bg-center px-4 py-12 text-center text-white shadow-lg sm:px-6 md:px-12 md:py-16",
@@ -25,7 +25,7 @@ const CallToAction = () => {
           </p>
           {/* Button */}
           <div className="mt-6">
-            <button className="rounded-full bg-[#B11E54] px-6 py-3 text-sm font-medium text-white sm:px-8 sm:py-4 sm:text-base md:px-20">
+            <button className="rounded-full bg-[#B11E54] px-10 py-3 text-sm  text-white sm:px-12 sm:py-4 sm:text-base md:px-20 font-bold">
               ADD TO CART
             </button>
           </div>

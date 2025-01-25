@@ -48,7 +48,7 @@ const faqs = [
 
 export function Faq() {
   return (
-    <section className="my-12  p-fit">
+    <section className=" secGap  p-fit">
       <h2 className="pb-10 text-center text-3xl font-bold sm:text-5xl">
         Frequently Asked Questions
       </h2>
@@ -74,7 +74,7 @@ export function Faq() {
           </Accordion.Item>
         ))}
       </Accordion.Root>
-      <div className="grid justify-items-center gap-6 my-12 md:my-16">
+      <div className="grid justify-items-center gap-6 secGap">
         <CartBadge />
         <AddToCartButton />
         <OffersBadge/>

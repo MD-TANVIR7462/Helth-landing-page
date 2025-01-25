@@ -62,7 +62,7 @@ const LandingSection = () => {
     },
   ];
   return (
-    <section className="bg-blueGray-50 relative mx-auto max-w-7xl bg-gray-100/30">
+    <section className="bg-blueGray-50 relative mx-auto max-w-7xl bg-gray-100/30 secGap">
       <div className="min-h-screen-75 relative flex h-[400px] md:h-[550px] content-center items-center justify-center">
         <div
           className="absolute top-0 h-full w-full rounded-3xl bg-cover bg-center"
@@ -79,7 +79,7 @@ const LandingSection = () => {
           <div className="flex flex-wrap items-center">
             <div className="ml-auto mr-auto w-full px-4 text-center lg:w-6/12">
               <div className="">
-                <h1 className="text-2xl md:text-3xl font-semibold text-white">
+                <h1 className="text-2xl md:text-4xl   font-semibold text-white">
                   NATURES BEST INGREDIENTS
                   <br />
                   Harness the power of nature’s best
