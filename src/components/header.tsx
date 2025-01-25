@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BsCart3 } from "react-icons/bs";
 import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-
+import { motion } from "framer-motion";
 export function Header() {
   const [isScrollingDown, setIsScrollingDown] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -49,7 +49,7 @@ export function Header() {
             </div>
           </div>
           <div className="bg-brand-green">
-            <div className="relative mx-auto flex max-w-7xl items-center justify-end px-4 py-3 text-white  min-h-[70px] lg:py-1">
+            <div className="relative mx-auto flex min-h-[70px] max-w-7xl items-center justify-end px-4 py-3 text-white lg:py-1">
               <a
                 className="absolute right-1/2 translate-x-1/2 p-1 text-2xl focus:ring"
                 href="#"
@@ -71,15 +71,15 @@ export function Header() {
 
       {/* Secondary navbar - shows when scrolling down */}
       <nav
-        className={`fixed left-0 right-0 top-0 z-40 bg-white shadow-md transition-transform duration-300 ${
-          isScrollingDown ? "translate-y-0" : "-translate-y-full"
+        className={`fixed bottom-0 md:bottom-auto left-0 right-0 z-40 bg-white shadow-md transition-transform duration-300 md:top-0 ${
+          isScrollingDown ? "translate-y-0" : "md:-translate-y-full"
         }`}
       >
         <div className="w-full border-b border-gray-200">
           <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
             {/* Left Section */}
             <div className="flex items-center gap-4">
-              <button className="flex items-center justify-center">
+              <button className=" hidden  md:flex items-center justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -96,40 +96,54 @@ export function Header() {
                   />
                 </svg>
               </button>
-              <a href="#" className="text-xl font-bold">
+              
+              <a href="#" className="text-xl md:hidden font-bold flex justify-center items-center">
                 <img
-                  className="h-8 w-auto"
-                  src="/images/img-logo.webp"
+                  className="h-16 w-auto "
+                  src="/images/img-banner.webp"
                   alt="SNAP"
                 />
+                  <div className="text-sm font-semibold">
+                 +Free Shipping on<br/> orders over{" "}
+                  <span className="text-brand-lime">$50</span>
+                </div>
               </a>
             </div>
             <div className="gap-6 md:flex md:items-center">
               <div className="hidden md:block">
                 <div className="text-sm font-semibold">
-                Top Notch Customer Support
+                  Top Notch Customer Support
                 </div>
                 <div className="text-sm text-gray-600">
-                90-Day Money Back Guarantee
+                  90-Day Money Back Guarantee
                 </div>
               </div>
               <div className="hidden md:block">
                 <div className="text-sm font-semibold">
-                Free Shipping on orders over <span className="text-brand-lime">$50</span>
+                  Free Shipping on orders over{" "}
+                  <span className="text-brand-lime">$50</span>
                 </div>
-                <div className="text-sm text-gray-600">
-                Fast Delivery 
-                </div>
+                <div className="text-sm text-gray-600">Fast Delivery</div>
               </div>
             </div>
-              <div className="flex items-center gap-4 sm:gap-6">
-                <button className="flex items-center gap-2 rounded-md bg-[#28A745] px-4 py-2 text-xs font-medium text-white transition-colors hover:bg-[#218838] sm:px-6 sm:py-2 sm:text-sm">
-                  <span>Add To Cart</span>
-                  <span className="rounded bg-white/20 px-2 py-0.5 text-xs">
-                    $97
-                  </span>
-                </button>
-              </div>
+            <div className="flex items-center gap-4 sm:gap-6">
+              <motion.button
+                className="flex items-center gap-2 rounded-md bg-[#28A745] px-4 py-2 text-xs font-medium text-white shadow-lg transition-colors hover:bg-[#218838] sm:px-6 sm:py-2 sm:text-sm"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.95 }}
+                animate={{
+                  scale: [1, 1.05, 1],
+                  transition: {
+                    duration: 1.4,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    repeatType: "mirror",
+                  },
+                }}
+              >
+                <span className="text-[18px] font-bold">Add To Cart</span>
+              </motion.button>
+            </div>
           </div>
         </div>
       </nav>

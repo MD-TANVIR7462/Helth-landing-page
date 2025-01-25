@@ -2,7 +2,7 @@ import { twMerge } from "tailwind-merge";
 
 const SellingFast = () => {
   return (
-    <div className="mx-auto  max-w-7xl px-3 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
       <div
         className={twMerge(
           "rounded-[40px] bg-center px-4 py-12 text-center text-white shadow-lg sm:px-6 md:px-12 md:py-16",
@@ -25,10 +25,10 @@ const SellingFast = () => {
           </div>
           <div className="mx-auto mt-2 text-center">
             <p className="text-sm text-white/90 sm:text-base">
-              Have questions? Contact us at (888) 491-5043 or email
+              Have questions? Contact us at (844) -640-0728 or email
               <br className="sm:hidden" />{" "}
               <span className="whitespace-nowrap">
-                support@snapsupplements.com. We're here to help!
+                support@myecohealth.com We're here to help!
               </span>
             </p>
           </div>

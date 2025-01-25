@@ -17,6 +17,8 @@ export function Packages() {
     "2plus1": { subscriptionType: "subscribe", deliveryOption: "" },
   });
 
+  const [total, setTotal] = useState("subscribe");
+
   const packages = {
     "3plus2": {
       title: "Buy 3, Get 2 FREE!",
@@ -33,6 +35,7 @@ export function Packages() {
       popular: true,
       valueble: false,
       image: "/images/package2.png",
+      regularly: "49.95",
     },
     "2plus1": {
       title: "Buy 2, Get 1 FREE!",
@@ -49,6 +52,7 @@ export function Packages() {
       popular: false,
       valueble: true,
       image: "/images/package3.png",
+      regularly: "49.95",
     },
     "1bottle": {
       title: "1 Bottle",
@@ -65,6 +69,7 @@ export function Packages() {
       popular: false,
       valueble: false,
       image: "/images/package1.png",
+      regularly: null,
     },
   };
 
@@ -72,6 +77,7 @@ export function Packages() {
     packageKey: PackageOption,
     type: SubscriptionType,
   ) => {
+    setTotal(type);
     setPackageStates((prev) => ({
       ...prev,
       [packageKey]: { ...prev[packageKey], subscriptionType: type },
@@ -120,19 +126,27 @@ export function Packages() {
                   {pkg.title}
                 </h2>
                 <p className="mb-6 text-center font-semibold italic text-green-700">
+                  <span>{pkg.regularly !== null && "Instant Savings"}</span>{" "}
                   {isSubscribe ? pkg.savingsSubscribe : pkg.savingsOnetime}
                 </p>
                 <img src={pkg.image} alt="" className="mx-auto mb-4" />
                 <div className="mb-6 text-center">
-                  <div className="text-4xl font-bold text-gray-900">
+                  <div className="text-5xl font-bold text-gray-900">
                     $
                     {isSubscribe
                       ? pkg.perBottleSubscribe
                       : pkg.perBottleOnetime}
                   </div>
-                  <div className="text-sm text-red-500 line-through">
-                    Regularly ${pkg.regularPrice}
-                  </div>
+                  <p className="font-bold">Per canister</p>
+                  {pkg.regularly && (
+                    <div className="text-[20px] font-semibold text-gray-400">
+                      Regularly
+                      <span className="text-red-500 line-through">
+                        {" "}
+                        ${pkg?.regularly}
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 <div className="mb-6 space-y-3">
@@ -152,8 +166,12 @@ export function Packages() {
                       />
                       <span className="ml-2">Subscribe & Save 20%</span>
                     </div>
-                    <span className="font-semibold text-green-600">
-                      ${pkg.subscribePrice}
+                    <span className="font-semibold text-green-700">
+                      ${pkg.subscribePrice}{" "}
+                      <span className="font-normal text-gray-400 line-through">
+                        {" "}
+                        ${pkg?.regularPrice}
+                      </span>
                     </span>
                   </label>
                   {isSubscribe &&
@@ -199,7 +217,11 @@ export function Packages() {
                       <span className="ml-2">One-time Purchase</span>
                     </div>
                     <span className="font-semibold text-green-600">
-                      ${pkg.onetimePrice}
+                      ${pkg.onetimePrice}{" "}
+                      <span className="font-normal text-gray-400 line-through">
+                        {" "}
+                        ${pkg?.regularPrice}
+                      </span>
                     </span>
                   </label>
                 </div>
@@ -207,6 +229,14 @@ export function Packages() {
                 <button className="w-full rounded-lg bg-green-600 px-4 py-3 text-lg font-semibold text-white transition-colors hover:bg-green-700 lg:text-xl">
                   ADD TO CART
                 </button>
+                <p className="mt-3 text-center font-bold">
+                  Total: $
+                  {total == "subscribe" ? pkg.subscribePrice : pkg.onetimePrice}{" "}
+                  + FREE Shipping
+                </p>
+                <p className="text-center text-sm font-semibold italic text-gray-600">
+                  90-Day Money Back Guarantee
+                </p>
               </div>
             </div>
           );

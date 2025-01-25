@@ -3,55 +3,57 @@ import { IoIosCheckmark, IoIosCheckmarkCircle, IoMdStar } from "react-icons/io";
 
 const reviews = [
   {
-    user_name: "Melody O",
+    user_name: " Linda R.",
     isVerified: true,
     ratings: 5,
     title:
-      "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
+      "Overactive Bladder Relief Story",
     review:
-      "I loved it except I would like a months of the product rather than getting 6 worth.",
+      "I never thought I’d find something that could stop those constant bathroom trips. Eco Health’s Advanced Urinary Formula truly changed my life—I finally feel free from bladder issues!"
+,
     img: "/images/old-man-1.jpeg",
   },
   {
-    user_name: "Melody O",
+    user_name: "Emily C.",
     isVerified: true,
     ratings: 5,
     title:
-      "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
+      " Improved Confidence in Social Settings",
     review:
-      "I loved it except I would like a months of the product rather than getting 6 worth.",
+      "I used to avoid social outings because I was afraid of constant interruptions from my bladder. Now, I can enjoy time with friends and family without worrying about running to the bathroom!",
     img: "/images/old-man-2.jpeg",
   },
   {
-    user_name: "Melody O",
+    user_name: "Susan T.",
     isVerified: true,
     ratings: 5,
     title:
-      "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
+      "Improved Sleep and Confidence",
     review:
-      "I loved it except I would like a months of the product rather than getting 6 worth.",
+      "For years, I was up multiple times every night. Since starting Eco Health’s Advanced Urinary Formula, I finally sleep through the night—and wake up feeling refreshed!",
+
     img: "/images/old-women-1.jpeg",
   },
   {
-    user_name: "Melody O",
+    user_name: "James L.",
     isVerified: true,
     ratings: 5,
     title:
-      "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
-    review:
-      "I loved it except I would like a months of the product rather than getting 6 worth.",
+      "Freedom from Embarrassment (Active Lifestyle).",
+    review:"Bladder issues used to hold me back from enjoying my favorite activities. Thanks to Eco Health’s Advanced Urinary Formula, I can work out and stay active without worry."
+,
     img: "/images/old-women-2.jpeg",
   },
-  {
-    user_name: "Melody O",
-    isVerified: true,
-    ratings: 5,
-    title:
-      "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
-    review:
-      "I loved it except I would like a months of the product rather than getting 6 worth.",
-    img: "/images/old-women-3.jpeg",
-  },
+  // {
+  //   user_name: "Melody O",
+  //   isVerified: true,
+  //   ratings: 5,
+  //   title:
+  //     "I loved it except I would like a 30 day supply in the box so that would be 30 packets.",
+  //   review:
+  //     "I loved it except I would like a months of the product rather than getting 6 worth.",
+  //   img: "/images/old-women-3.jpeg",
+  // },
 ] as const;
 
 export function CustomerReviews() {
@@ -77,7 +79,7 @@ export function CustomerReviews() {
                 alt={user_name}
               />
               <div className="pt-2">
-                <h4 className="text-sm sm:text-base">{user_name}</h4>
+                <h4 className="text-sm sm:text-lg font-semibold">{user_name}</h4>
                 <div className="flex items-center gap-x-1 text-xs sm:text-sm">
                   <IoIosCheckmarkCircle className="size-4 text-[#1f8e2a]" />
                   <span>Verified Buyer</span>
@@ -102,9 +104,9 @@ export function CustomerReviews() {
               </div>
               <p className="text-base font-semibold sm:text-lg">{title}</p>
               <p className="text-sm sm:text-base">{review}</p>
-              <p className="text-xs sm:text-sm">
+              {/* <p className="text-xs sm:text-sm">
                 Review left on: Nitric Oxide Organic Beets Single-Serve Packs
-              </p>
+              </p> */}
               <div className="flex items-center gap-x-2 text-xs sm:text-sm">
                 Was this review helpful? <BiSolidLike /> 0 <BiSolidDislike /> 0
               </div>
