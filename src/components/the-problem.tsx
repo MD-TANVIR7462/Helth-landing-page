@@ -4,10 +4,10 @@ import { config } from "../config";
 export function TheProblem() {
   return (
     <section className="p-fit mx-auto secGap max-w-md lg:max-w-7xl">
-      <h2 className="title text-brand-maroon">The Problem</h2>
+      <h2 className="title text-brand-maroon">BYE BYE BLADDER </h2>
       <p className="mx-auto max-w-[65ch] text-pretty px-2 pb-6 lg:pb-0 text-center font-semibold leading-relaxed md:text-lg">
-        As we age, the intricate network of muscles surrounding the bladder
-        weakens often leading these problems.
+      Accidents - Discomfort - Leaks - Embarrassment
+
       </p>
       <div className="grid gap-6 lg:gap-8 lg:grid-cols-2 lg:items-center">
         <img

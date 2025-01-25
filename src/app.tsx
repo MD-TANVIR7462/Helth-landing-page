@@ -9,8 +9,6 @@ import { Header } from "./components/header";
 import LandingSection from "./components/LandingProducts";
 import { Packages } from "./components/packages";
 import { Satisfaction } from "./components/satisfaction";
-
-
 import SellingFast from "./components/selligh-false";
 import { TheProblem } from "./components/the-problem";
 import { TheSolution } from "./components/the-solution";

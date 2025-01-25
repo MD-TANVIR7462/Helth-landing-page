@@ -1,12 +1,11 @@
 export function WhyItWorks() {
   return (
-    <section className="p-fit mx-auto  max-w-7xl">
+    <section className="p-fit mx-auto max-w-7xl">
       <h2 className="title">Why It Works</h2>
       <h2 className="mx-auto max-w-[65ch] text-pretty px-2 pb-8 text-center font-semibold leading-relaxed md:text-lg">
-        Eco Health® Advance Urinary Formula is a premium, doctor-formulated
-        blend for bladder health and urinary comfort.
+      Harness the Power of Nature’s Best Ingredients
       </h2>
-      <div className="mx-auto mt-2 grid gap-8 lg:grid-cols-2 items-center">
+      <div className="mx-auto mt-2 grid items-center gap-8 lg:grid-cols-2">
         <img
           className="h-full rounded-lg object-cover object-center lg:row-span-2"
           src="/images/img-why-it-works-section.webp"

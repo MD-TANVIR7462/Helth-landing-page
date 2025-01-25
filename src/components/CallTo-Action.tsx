@@ -2,7 +2,7 @@ import { twMerge } from "tailwind-merge";
 
 const CallToAction = () => {
   return (
-    <div className="mx-auto secGap max-w-7xl px-3 sm:px-6 lg:px-8">
+    <div className="secGap mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
       <div
         className={twMerge(
           "rounded-[40px] bg-center px-4 py-12 text-center text-white shadow-lg sm:px-6 md:px-12 md:py-16",
@@ -14,18 +14,19 @@ const CallToAction = () => {
         <div className="mx-auto max-w-3xl">
           {/* Heading */}
           <h2 className="mx-auto w-[90%] text-2xl font-bold leading-tight sm:w-[80%] sm:text-3xl md:text-4xl">
-            Try Eco Health® Advance Urinary Formula Risk Free for 90 Days
+            Try Eco Health® Advanced Urinary Formula Risk Free for 90 Days
           </h2>
           {/* Paragraph */}
           <p className="mt-4 text-sm leading-relaxed sm:text-base md:mt-6">
-            Eco Health® Advance Urinary Formula is a premium, doctor-formulated
-            blend designed to support bladder health and urinary function. This
-            comprehensive formula combines clinically supported ingredients to
-            enhance bladder control and promote urinary comfort.
+            Eco Health® Advanced Urinary Formula is a premium,
+            doctor-formulated blend designed to support bladder health and
+            urinary function. This comprehensive formula combines clinically
+            supported ingredients to enhance bladder control and promote urinary
+            comfort.
           </p>
           {/* Button */}
           <div className="mt-6">
-            <button className="rounded-full bg-[#B11E54] px-10 py-3 text-sm  text-white sm:px-12 sm:py-4 sm:text-base md:px-20 font-bold">
+            <button className="rounded-full bg-[#B11E54] px-10 py-3 text-sm font-bold text-white sm:px-12 sm:py-4 sm:text-base md:px-20">
               ADD TO CART
             </button>
           </div>

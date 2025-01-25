@@ -3,9 +3,9 @@ import { config } from "../config";
 export function WhyUrinaryFormula() {
   return (
     <section className="relative overflow-hidden bg-[#FAF3E1] py-8 md:py-16">
-      <h3 className="text-maroon text-balance pb-4 text-center text-[26px] font-black  md:text-4xl">Why Advance Urinary Formula?</h3>
+      <h3 className="text-maroon text-balance pb-4 text-center text-[26px] font-black  md:text-5xl">Why Advanced Urinary Formula?</h3>
       <p className="text-semibold text-balance pb-4 text-center text-2xl text-black md:text-[34px]">
-        Harness the Power of Advance
+        Harness the Power of Advanced
         <br />
         Urinary Formula
       </p>
