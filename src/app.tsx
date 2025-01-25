@@ -29,10 +29,10 @@ export function App() {
       <EcoHelth />
       <WhyItWorks />
       <LandingSection />
+      <Satisfaction/>
       <Packages />
       <SellingFast />
       <Faq />
-      <Satisfaction/>
       <CustomerReviews/>
       <HaveAquestion/>
       <Footer />

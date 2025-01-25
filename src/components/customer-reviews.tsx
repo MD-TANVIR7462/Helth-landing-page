@@ -56,69 +56,56 @@ const reviews = [
 
 export function CustomerReviews() {
   return (
-    <section className="relative mx-auto max-w-6xl space-y-4 pt-32 text-center p-fit">
-      <h3 className="pb-2 text-xl font-bold text-brand-maroon sm:text-2xl">
-        Customer Reviews
-      </h3>
-      <div className="flex flex-wrap items-center justify-center gap-x-4 font-bold md:py-1 md:text-3xl">
-        <span className="flex items-center">
-          {Array.from({ length: 5 }).map((_, index) => (
-            <IoMdStar
-              className="-ms-1 size-8 text-[#e5c729]"
-              key={`star${index}`}
-            />
-          ))}
-        </span>
-        <span>4.7/5 stars</span>
-      </div>
-      <p className="text-3xl font-bold sm:text-6xl">
+    <section className="relative mx-auto my-12 max-w-6xl space-y-4 p-4 text-center lg:p-6">
+      <p className="mx-auto max-w-[60ch] text-2xl font-black leading-snug md:text-3xl lg:text-4xl">
         Trusted by Thousands of Customers
       </p>
-      <p className="mx-auto max-w-[60ch] text-pretty font-semibold leading-relaxed sm:text-lg">
+      <p className="mx-auto max-w-[60ch] text-sm font-semibold leading-relaxed md:text-base lg:text-lg">
         Hear from happy customers on how Nitric Oxide Organic Beets - Mixed
         Berry Flavor improved their life
       </p>
-      <ul className="divide-y-2 pt-10 text-start">
+      <ul className="divide-y divide-gray-200 text-start md:pt-8">
         {reviews.map(({ title, review, ratings, user_name, img }, index) => (
           <li
             key={title + index}
-            className="grid items-start gap-4 py-10 md:grid-cols-[auto_1fr] md:gap-10"
+            className="grid items-start gap-4 py-6 md:grid-cols-[auto_1fr] md:gap-8"
           >
-            <div className="grid grid-cols-[auto_1fr] grid-rows-3 items-start gap-x-4">
+            <div className="grid grid-cols-[auto_1fr] grid-rows-2 md:grid-rows-3 items-start  gap-x-4">
               <img
-                className="row-span-2 row-start-1 flex size-16 items-center justify-center rounded-full object-cover"
+                className="row-span-2 row-start-1 h-16 w-16 rounded-full object-cover sm:h-20 sm:w-20"
                 src={img}
+                alt={user_name}
               />
               <div className="pt-2">
-                <h4>{user_name}</h4>
-                <div className="flex items-center gap-x-1 text-sm">
+                <h4 className="text-sm sm:text-base">{user_name}</h4>
+                <div className="flex items-center gap-x-1 text-xs sm:text-sm">
                   <IoIosCheckmarkCircle className="size-4 text-[#1f8e2a]" />
                   <span>Verified Buyer</span>
                 </div>
               </div>
-              <p className="col-span-2 flex items-center py-4">
-                <IoIosCheckmark className="size-7 text-[#1f8e2a]" /> I recommend
+              <p className="col-span-2 flex items-center text-xs md:py-2 md:text-sm">
+                <IoIosCheckmark className="size-6 text-[#1f8e2a]" /> I recommend
                 this product
               </p>
             </div>
             <div className="space-y-4">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between text-xs sm:text-sm">
                 <span className="flex items-center">
                   {Array.from({ length: ratings }).map((_, index) => (
                     <IoMdStar
-                      className="-ms-1 size-7 text-[#e5c729]"
+                      className="size-5 text-[#e5c729] md:size-6 lg:size-7"
                       key={`star${index}`}
                     />
                   ))}
                 </span>
-                <span className="text-sm opacity-80">4 days ago</span>
+                <span className="opacity-80">4 days ago</span>
               </div>
-              <p className="text-xl font-semibold">{title}</p>
-              <p>{review}</p>
-              <p className="text-sm">
+              <p className="text-base font-semibold sm:text-lg">{title}</p>
+              <p className="text-sm sm:text-base">{review}</p>
+              <p className="text-xs sm:text-sm">
                 Review left on: Nitric Oxide Organic Beets Single-Serve Packs
               </p>
-              <div className="flex items-center gap-x-2 text-sm">
+              <div className="flex items-center gap-x-2 text-xs sm:text-sm">
                 Was this review helpful? <BiSolidLike /> 0 <BiSolidDislike /> 0
               </div>
             </div>
