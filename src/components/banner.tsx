@@ -49,7 +49,7 @@ export function Banner() {
         <OffersBadge className="col-span-full row-start-5 md:row-start-5 lg:col-span-1 lg:col-start-1 lg:row-start-8 my-6 md:my-0"  />
         <div className="right-0 top-1/2 row-start-3 max-w-[40rem] md:row-start-3 lg:col-start-2  lg:row-start-1 lg:absolute lg:row-span-8 lg:w-[min(52vw,_45rem)] lg:max-w-none lg:-translate-y-1/2">
           <img
-            className="h-auto  max-h-[55vh] w-full py-5   object-cover object-center md:max-h-[65vh] lg:max-h-[80vh] xl:h-[700px]"
+            className="h-auto  max-h-[55vh] w-full py-5 rounded-[50%]  object-cover object-center md:max-h-[65vh] lg:max-h-[80vh] xl:h-[700px]"
             src="/images/hero-2.png"
             alt="banner image"
           />

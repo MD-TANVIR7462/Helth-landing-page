@@ -12,7 +12,7 @@ export function TheSolution() {
       </p>
       <div className="grid gap-6 md:gap-8 lg:grid-cols-2 lg:items-center">
         <img
-          className="mx-auto rounded-lg lg:h-[84%] lg:w-[92%]"
+          className="mx-auto rounded-lg lg:h-[84%] lg:w-[95%]"
           src="/images/solution.png"
           alt="solution section image"
         />
