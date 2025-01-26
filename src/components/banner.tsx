@@ -21,7 +21,7 @@ export function Banner() {
           <span>4.7/5 stars</span>
           <span>859 verified reviews</span>
         </div>
-        <p className="max-w-[90%] md:max-w-[70%] text-wrap text-[1.5rem] font-black  text-[#8e2253] md:col-start-1 lg:text-[44px] lg:leading-[1.25] text-center lg:text-start">
+        <p className="max-w-[90%] md:max-w-[70%] text-wrap text-[1.8rem] font-black  text-[#8e2253] md:col-start-1 lg:text-[44px] lg:leading-[1.25] text-center lg:text-start">
           BLADDER-BUILDING Super Nutrient
           <span className="text-neutral-dark"> for </span> LEAK FREE days
           <span className="text-neutral-dark"> and </span>
@@ -49,8 +49,8 @@ export function Banner() {
         <OffersBadge className="col-span-full row-start-5 md:row-start-5 lg:col-span-1 lg:col-start-1 lg:row-start-8 my-6 md:my-0"  />
         <div className="right-0 top-1/2 row-start-3 max-w-[40rem] md:row-start-3 lg:col-start-2  lg:row-start-1 lg:absolute lg:row-span-8 lg:w-[min(52vw,_45rem)] lg:max-w-none lg:-translate-y-1/2">
           <img
-            className="h-auto  max-h-[60vh] w-full object-cover object-center md:max-h-[70vh] lg:max-h-[85vh] xl:h-[700px]"
-            src="/images/pngheroo.png"
+            className="h-auto  max-h-[55vh] w-full py-5   object-cover object-center md:max-h-[65vh] lg:max-h-[80vh] xl:h-[700px]"
+            src="/images/hero-2.png"
             alt="banner image"
           />
         </div>

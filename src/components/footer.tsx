@@ -26,7 +26,7 @@ export function Footer() {
       </div>
       <div className="grid justify-items-center gap-y-8 text-center">
         <div className="space-y-2 pt-14">
-          <h3 className="text-2xl font-bold">Contact</h3>
+          <h3 className="text-3xl font-bold">Contact</h3>
           <div className="flex items-center gap-x-3 text-sm">
             <img className="size-8" src="/icons/icon-footer-4.svg" alt="" />
             <a href="tel:(844) -640-0728 ">(844) -640-0728 </a>
@@ -37,12 +37,11 @@ export function Footer() {
           </div>
         </div>
         <p className="max-w-[65ch] leading-relaxed opacity-60">
-          *These statements have not been evaluated by the Food and Drug
-          Administration. This product is not intended to diagnose, treat, cure,
-          or prevent any disease. +As part of a healthy lifestyle.
+          *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. © 2024 Eco Health. All Rights Reserved. Caution: If you are pregnant, nursing, or taking medications, consult your physician before use. Keep out of reach of children
         </p>
         <span className="opacity-60">
-          © {new Date().getFullYear()} Snap Supplements. All Rights Reserved
+          © {new Date().getFullYear()} ECO HEALTH. All Rights Reserved
+
         </span>
       </div>
     </footer>

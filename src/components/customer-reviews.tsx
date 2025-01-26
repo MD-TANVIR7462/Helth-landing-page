@@ -59,7 +59,7 @@ const reviews = [
 export function CustomerReviews() {
   return (
     <section className="relative mx-auto max-w-6xl space-y-2 p-4 text-center lg:p-6">
-      <p className="mx-auto max-w-[60ch] text-2xl font-black leading-snug md:text-3xl lg:text-4xl">
+      <p className="mx-auto max-w-[60ch] leading-snug md:text-3xl text-balance pb-4 text-center text-4xl font-black  md:text-[44px] lg:text-5xl">
         Trusted by Thousands of Customers
       </p>
       <p className="mx-auto max-w-[60ch] text-sm font-semibold leading-relaxed md:text-base lg:text-lg">

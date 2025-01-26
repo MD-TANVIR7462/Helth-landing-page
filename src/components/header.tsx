@@ -38,9 +38,12 @@ export function Header() {
                 <FaChevronLeft className="size-[0.875rem] opacity-75 hover:scale-105 hover:opacity-100" />
               </button>
               <div className="group flex flex-wrap items-center justify-center gap-x-2 py-1 hover:cursor-pointer hover:underline">
-                <span className="font-bold capitalize underline-offset-4">
+                <a
+                  href="tel:(844)-640-0728"
+                  className="font-bold capitalize "
+                >
                   Need Assistance? (844)-640-0728
-                </span>
+                </a>
                 <FaArrowRight className="size-[0.875rem] transition-transform group-hover:translate-x-[1px]" />
               </div>
               <button className="outline-none">
@@ -71,7 +74,7 @@ export function Header() {
 
       {/* Secondary navbar - shows when scrolling down */}
       <nav
-        className={`fixed bottom-0 md:bottom-auto left-0 right-0 z-40 bg-white shadow-md transition-transform duration-300 md:top-0 ${
+        className={`fixed bottom-0 left-0 right-0 z-40 bg-white shadow-md transition-transform duration-300 md:bottom-auto md:top-0 ${
           isScrollingDown ? "translate-y-0" : "md:-translate-y-full"
         }`}
       >
@@ -79,7 +82,7 @@ export function Header() {
           <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
             {/* Left Section */}
             <div className="flex items-center gap-4">
-              <button className=" hidden  md:flex items-center justify-center">
+              <button className="hidden items-center justify-center md:flex">
                 <svg
                   width="24"
                   height="24"
@@ -96,15 +99,19 @@ export function Header() {
                   />
                 </svg>
               </button>
-              
-              <a href="#" className="text-xl md:hidden font-bold flex justify-center items-center">
+
+              <a
+                href="#"
+                className="flex items-center justify-center text-xl font-bold md:hidden"
+              >
                 <img
-                  className="h-16 w-auto "
+                  className="h-16 w-auto"
                   src="/images/img-banner.webp"
                   alt="SNAP"
                 />
-                  <div className="text-sm font-semibold">
-                 +Free Shipping on<br/> orders over{" "}
+                <div className="text-sm font-semibold">
+                  +Free Shipping on
+                  <br /> orders over{" "}
                   <span className="text-brand-lime">$50</span>
                 </div>
               </a>

@@ -3,7 +3,7 @@ import { config } from "../config";
 
 export function TheSolution() {
   return (
-    <section className="p-fit mx-auto max-w-md lg:max-w-7xl">
+    <section className="p-fit mx-auto  max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-7xl ">
       <h3 className="title text-[#1f8e2a]">The Solution</h3>
       <p className="mx-auto max-w-[65ch] text-pretty px-2 pb-6 text-center font-semibold leading-relaxed md:text-lg">
         Bye, Buy Bladder Leaks, accidents, discomfort and worries with Eco

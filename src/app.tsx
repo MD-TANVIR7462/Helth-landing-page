@@ -1,5 +1,5 @@
 import { Banner } from "./components/banner";
-import CallToAction from "./components/CallTo-Action";
+// import CallToAction from "./components/CallTo-Action";
 import { CustomerReviews } from "./components/customer-reviews";
 import EcoHelth from "./components/Eco-helth";
 import { Faq } from "./components/faq";
@@ -9,7 +9,7 @@ import { Header } from "./components/header";
 import LandingSection from "./components/LandingProducts";
 import { Packages } from "./components/packages";
 import { Satisfaction } from "./components/satisfaction";
-import SellingFast from "./components/selligh-false";
+import SellingFast from "./components/sellingFast";
 import { TheProblem } from "./components/the-problem";
 import { TheSolution } from "./components/the-solution";
 import { WhyItWorks } from "./components/why-it-works";
@@ -22,7 +22,7 @@ export function App() {
       <Banner />
       <TheProblem />
       <TheSolution />
-      <CallToAction />
+      {/* <CallToAction /> */}
       <WhyUrinaryFormula />
       <EcoHelth />
       <WhyItWorks />

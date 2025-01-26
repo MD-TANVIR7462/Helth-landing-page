@@ -49,7 +49,7 @@ const faqs = [
 export function Faq() {
   return (
     <section className=" secGap  p-fit">
-      <h2 className="pb-10 text-center text-3xl font-bold sm:text-5xl">
+      <h2 className="text-balance pb-10 text-center text-4xl font-black  md:text-[44px] lg:text-5xl">
         Frequently Asked Questions
       </h2>
       <Accordion.Root

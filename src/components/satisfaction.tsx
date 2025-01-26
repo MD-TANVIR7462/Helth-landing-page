@@ -7,26 +7,12 @@ export function Satisfaction() {
     <div className="bg-brand-beige">
       <section className="mx-auto my-0 grid max-w-7xl place-items-center justify-items-center p-5 lg:grid-cols-2 lg:gap-12 lg:p-8 xl:p-0">
         {/* Image Section */}
-        <div className="relative mx-auto flex aspect-square max-w-[300px] items-center justify-center order-first md:order-first lg:order-last md:max-w-[400px] lg:max-w-[500px]">
+        <div className="relative mx-auto flex aspect-square max-w-[400px] items-center justify-center order-first md:order-first lg:order-last md:max-w-[500px] lg:max-w-[600px]">
           <img
-            className="h-full w-full rounded-full object-cover p-5"
-            src="/images/heroimage.png"
+            className="h-full w-full rounded-full object-cover "
+            src="/images/hero-3.png"
             alt="satisfaction image"
           />
-          <div className="absolute inset-0">
-            <svg
-              className="h-full w-full"
-              viewBox="0 0 110 110"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M 50,2 A 53,53 0 1,1 2,55"
-                stroke="#800000"
-                strokeWidth=".4"
-                fill="none"
-              />
-            </svg>
-          </div>
         </div>
 
         {/* Text Section */}

@@ -92,9 +92,9 @@ export function Packages() {
   };
 
   return (
-    <div className="mx-auto max-w-7xl bg-white px-4 py-12">
+    <div className="mx-auto max-w-7xl bg-white px-4 py-12 mt-3">
       <div className="mb-12 text-center">
-        <h1 className="mb-2 text-4xl font-bold text-gray-900">
+        <h1 className="title">
           Choose Your Package
         </h1>
         <p className="text-xl text-gray-600">Your Pathway to Bladder Health</p>

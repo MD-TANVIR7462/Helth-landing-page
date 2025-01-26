@@ -1,4 +1,5 @@
 import { twMerge } from "tailwind-merge";
+import { SalesBadge } from "./sales-badge";
 
 const SellingFast = () => {
   return (
@@ -12,12 +13,7 @@ const SellingFast = () => {
         }}
       >
         <div className="mx-auto max-w-3xl">
-          <div className="mx-auto mb-3 inline-flex rounded-full border border-dashed border-white bg-[#395856] px-6 py-2">
-            <p className="text-sm text-white sm:text-base">
-              Selling fast, HURRY! 43 sold in last hour!🔥
-            </p>
-          </div>
-
+          <SalesBadge className="mx-auto mb-3 inline-flex rounded-full border border-dashed border-white bg-[#395856] px-6 py-2 text-black" />
           <div className="mx-auto text-center text-white">
             <p className="text-sm sm:text-base">
               Selling out fast—don't wait!🚀 Over 40 purchased in the last hour!
@@ -25,10 +21,20 @@ const SellingFast = () => {
           </div>
           <div className="mx-auto mt-2 text-center">
             <p className="text-sm text-white/90 sm:text-base">
-              Have questions? Contact us at (844) -640-0728 or email
+              Have questions? Contact us at{" "}
+              <a href="tel:(844) -640-0728" className="text-green-500 hover:underline">
+                (844) -640-0728
+              </a>{" "}
+              or email
               <br className="sm:hidden" />{" "}
               <span className="whitespace-nowrap">
-                support@myecohealth.com We're here to help!
+                <a
+                  href="mailto:support@myecohealth.com"
+                  className="text-green-500 hover:underline"
+                >
+                  support@myecohealth.com{" "}
+                </a>{" "}
+                We're here to help!
               </span>
             </p>
           </div>
