@@ -4,10 +4,11 @@ import { SalesBadge } from "./sales-badge";
 
 export function Satisfaction() {
   return (
-    <div className="bg-brand-beige">
-      <section className="mx-auto my-0 grid max-w-7xl place-items-center justify-items-center p-5 lg:grid-cols-2 lg:gap-12 lg:p-8 xl:p-0">
+    <div className="bg-[ #FAF3E1
+] ">
+      <section className="mx-auto my-0 grid max-w-7xl place-items-center justify-items-center p-5 lg:grid-cols-2 lg:gap-12 lg:p-8 xl:p-5">
         {/* Image Section */}
-        <div className="relative mx-auto flex aspect-square max-w-[400px] items-center justify-center order-first md:order-first lg:order-last md:max-w-[500px] lg:max-w-[600px]">
+        <div className="relative mx-auto flex aspect-square max-w-[370px] items-center justify-center order-first md:order-first lg:order-last md:max-w-[500px] lg:max-w-[600px]">
           <img
             className="h-full w-full rounded-full object-cover "
             src="/images/hero-3.png"

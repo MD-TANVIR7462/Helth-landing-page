@@ -2,7 +2,7 @@ import { config } from "../config";
 
 export function WhyUrinaryFormula() {
   return (
-    <section className="relative overflow-hidden bg-[#FAF3E1] py-8 md:py-16">
+    <section className="relative overflow-hidden bg-[#FAF3E1] py-4 md:py-8">
       <h3 className="text-maroon title">Why Advanced Urinary Formula?</h3>
       <p className="text-semibold text-balance pb-4 text-center text-2xl text-black md:text-[34px]">
         Harness the Power of Advanced

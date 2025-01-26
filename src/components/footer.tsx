@@ -37,7 +37,7 @@ export function Footer() {
           </div>
         </div>
         <p className="max-w-[65ch] leading-relaxed opacity-60">
-          *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. © 2024 Eco Health. All Rights Reserved. Caution: If you are pregnant, nursing, or taking medications, consult your physician before use. Keep out of reach of children
+          *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Caution: If you are pregnant, nursing, or taking medications, consult your physician before use. Keep out of reach of children
         </p>
         <span className="opacity-60">
           © {new Date().getFullYear()} ECO HEALTH. All Rights Reserved

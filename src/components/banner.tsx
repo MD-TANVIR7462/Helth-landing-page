@@ -1,13 +1,14 @@
-import { IoIosCheckmarkCircle, IoMdStar } from "react-icons/io";
+import {  IoMdStar } from "react-icons/io";
 import { config } from "../config";
 import { AddToCartButton } from "./add-to-cart-button";
 import { CartBadge } from "./cart-badge";
 import { OffersBadge } from "./offers-badge";
 import { SalesBadge } from "./sales-badge";
+import { GiCheckMark } from "react-icons/gi";
 
 export function Banner() {
   return (
-    <section className=" full-width grid-containerxl  bg-gradient-to-r from-[#FAF3E1] to-yellow-200/40">
+    <section className=" full-width grid-containerxl  bg-[#FAF3E1]">
       <div className="lg:gird-cols-2 relative grid items-center justify-center justify-items-center gap-y-0 py-14 pt-10 text-center md:gap-x-10 md:gap-y-5 md:text-start lg:grid-cols-[75%_1fr] lg:justify-items-start">
         <div className="mb-6 md:my-0 flex flex-wrap items-center justify-center gap-x-3 rounded-full border bg-white px-4 py-2 text-sm font-bold shadow-lg md:py-1 md:text-base">
           <span className="flex items-center ">
@@ -21,7 +22,7 @@ export function Banner() {
           <span>4.7/5 stars</span>
           <span>859 verified reviews</span>
         </div>
-        <p className="max-w-[90%] md:max-w-[70%] text-wrap text-[1.8rem] font-black  text-[#8e2253] md:col-start-1 lg:text-[44px] lg:leading-[1.25] text-center lg:text-start">
+        <p className="max-w-[92%] md:max-w-[70%] text-wrap text-[1.6rem] md:text-[34px] font-black  text-[#8e2253] md:col-start-1 lg:text-[44px] lg:leading-[1.25] text-center lg:text-start">
           BLADDER-BUILDING Super Nutrient
           <span className="text-neutral-dark"> for </span> LEAK FREE days
           <span className="text-neutral-dark"> and </span>
@@ -36,7 +37,8 @@ export function Banner() {
           {config.bannerOfferings.map((offering, index) => (
             <li className="flex items-start gap-x-2" key={`offering${index}`}>
               <div>
-                <IoIosCheckmarkCircle className="size-7 text-[#1f8e2a]" />
+                <GiCheckMark  
+                className="size-6 p-1  bg-[#04C515] border-red-300   rounded-[4px] text-white " />
               </div>
               <span>{offering}</span>
             </li>
@@ -69,3 +71,5 @@ export function Banner() {
     </section>
   );
 }
+
+

@@ -102,11 +102,11 @@ export function Header() {
 
               <a
                 href="#"
-                className="flex items-center justify-center text-xl font-bold md:hidden"
+                className="flex items-center gap-2 justify-center text-xl font-bold md:hidden"
               >
                 <img
-                  className="h-16 w-auto"
-                  src="/images/img-banner.webp"
+                  className="h-[52px] w-auto"
+                  src="/images/hero-2.png"
                   alt="SNAP"
                 />
                 <div className="text-sm font-semibold">

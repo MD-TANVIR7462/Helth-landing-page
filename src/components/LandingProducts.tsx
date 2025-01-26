@@ -3,7 +3,7 @@ const LandingSection = () => {
     {
       id: 1,
       name: "Pumpkin Seed Extract",
-      image: "/images/1.png",
+      image: "/images/1.jpg",
       benefits: [
         "Strengthens pelvic floor muscles for better bladder control",
         "Increases urinary frequency and urgency by up to 40%",
@@ -13,7 +13,7 @@ const LandingSection = () => {
     {
       id: 2,
       name: "Horsetail Extract",
-      image: "/images/2.png",
+      image: "/images/2.jpg",
       benefits: [
         "Enhances connective tissue integrity with silica",
         "Improves urinary flow and bladder function by 15%",
@@ -23,7 +23,7 @@ const LandingSection = () => {
     {
       id: 3,
       name: "Punarnava Extract",
-      image: "/images/3.png",
+      image: "/images/3.jpg",
       benefits: [
         "Supports kidney health and reduces fluid retention",
         "Promotes healthy urination patterns",
@@ -33,7 +33,7 @@ const LandingSection = () => {
     {
       id: 4,
       name: "Soy Germ Extract",
-      image: "/images/4.png",
+      image: "/images/4.jpg",
       benefits: [
         "Isoflavones improve bladder strength and hormonal balance",
         "Reduces urinary issues in post-menopausal women",
@@ -43,7 +43,7 @@ const LandingSection = () => {
     {
       id: 5,
       name: "Veld Grape Extract",
-      image: "/images/5.png",
+      image: "/images/5.jpeg",
       benefits: [
         "Strengthens connective tissues for bladder health",
         "Reduces inflammation and irritation",
@@ -53,7 +53,7 @@ const LandingSection = () => {
     {
       id: 6,
       name: "Piperine",
-      image: "/images/6.png",
+      image: "/images/6.jpg",
       benefits: [
         "Boosts urinary health by reducing fluid retention",
         "Anti-inflammatory benefits for healthy urination",

@@ -1,5 +1,5 @@
 import { Banner } from "./components/banner";
-// import CallToAction from "./components/CallTo-Action";
+import CallToAction from "./components/CallTo-Action";
 import { CustomerReviews } from "./components/customer-reviews";
 import EcoHelth from "./components/Eco-helth";
 import { Faq } from "./components/faq";
@@ -20,19 +20,21 @@ export function App() {
     <div>
       <Header />
       <Banner />
-      <TheProblem />
-      <TheSolution />
-      {/* <CallToAction /> */}
+      <div className="bg-gradient-to-b from-white to-[#FAF3E1]">
+        <TheProblem />
+        <TheSolution />
+      </div>
+      <CallToAction />
       <WhyUrinaryFormula />
       <EcoHelth />
       <WhyItWorks />
       <LandingSection />
-      <Satisfaction/>
+      <Satisfaction />
       <Packages />
       <SellingFast />
       <Faq />
-      <CustomerReviews/>
-      <HaveAquestion/>
+      <CustomerReviews />
+      <HaveAquestion />
       <Footer />
     </div>
   );
