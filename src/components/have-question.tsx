@@ -11,13 +11,13 @@ function HaveAquestion() {
                   Have Questions? We're Here to Help!
                 </h1>
                 <p className="text-xl md:text-3xl">
-                  Call us at (844) -640-0728 for answers.
+                  Call us at <a href="tel:(844) -640-0728" className="text-green-500 ">(844) -640-0728</a> for answers.
                 </p>
               </div>
 
               <div className="space-y-3">
                 <p className="max-w-[400px] text-xl md:text-2xl">
-                  Act quickly—these are selling fast! 🔥 XX sold in the past
+                  Act quickly—these are selling fast! 🔥 43 sold in the past
                   hour.
                 </p>
                 <p className="max-w-[400px] text-[18px] leading-8 md:text-[22px]">
@@ -25,13 +25,13 @@ function HaveAquestion() {
                   guaranteed.
                 </p>
               </div>
-              <button className="rounded-full bg-[#B11E54] px-6 py-3 text-sm font-semibold text-white sm:px-8 sm:py-4 sm:text-base md:px-16 md:text-lg">
+              <button className="rounded-full bg-[#B11E54] px-6 py-3 text-sm font-bold text-white sm:px-8 sm:py-4 sm:text-base md:px-16 md:text-lg ">
                 Claim It Before It's Gone!
               </button>
             </div>
 
             {/* Right section with image */}
-            <div className="relative mx-auto max-w-md lg:order-2 lg:max-w-lg">
+            <div className="relative mx-auto w-[83%] md:w-full md:max-w-md lg:order-2 lg:max-w-lg">
               <div className="relative aspect-square">
                 <img
                   src="/images/call.jpg"

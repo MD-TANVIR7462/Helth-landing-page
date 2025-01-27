@@ -7,7 +7,7 @@ export function OffersBadge({ className }: Readonly<OffersBadgeProps>) {
     <div
       className={twMerge(
         className,
-        "flex flex-wrap items-center justify-center gap-14 text-sm font-semibold mt-4",
+        "flex flex-wrap items-center justify-center gap-7 sm:gap-10 md:gap-14 text-sm font-[600] md:font-semibold mt-4",
       )}
     >
       <div className="flex flex-col items-center gap-3 text-center lg:flex-row lg:text-start">

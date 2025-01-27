@@ -78,7 +78,7 @@ export function HealthyIngredients() {
                     alt={name}
                   />
                 </div>
-                <p className="test-sm leading-relaxed opacity-80">
+                <p className="text-sm leading-relaxed opacity-80">
                   {description}
                 </p>
                 <ul className="flex flex-wrap gap-2">

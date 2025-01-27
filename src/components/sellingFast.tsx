@@ -5,8 +5,8 @@ const SellingFast = () => {
     <div className="mx-auto max-w-7xl mt-2 md:mt-4">
       <div className="mx-auto text-center max-w-3xl">
         <SalesBadge className="mx-auto mb-3 inline-flex rounded-full border border-dashed border-white bg-[#395856] px-6 py-2 text-black" />
-        <div className="mx-auto max-w-lg font-semibold">
-          <p className="text-sm text-black sm:text-lg">
+        <div className="mx-auto max-w-2xl font-semibold">
+          <p className="px-3 text-[13px] text-black md:text-lg">
             <span>
               Selling out fast—don't wait!🚀 Over 40 purchased in the last hour!{" "}
             </span>

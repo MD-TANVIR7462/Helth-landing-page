@@ -94,12 +94,12 @@ export function Packages() {
   return (
     <div className="mx-auto max-w-7xl bg-white px-4 secGap">
       <div className="mb-4 md:mb-12 text-center">
-        <h1 className="text-balance pb-2 md:pb-4 text-center text-2xl font-black md:text-[39px] lg:text-4xl text-black">
+        <h1 className="title ">
           Choose Your Package
         </h1>
         <p className="text-md md:text-xl text-gray-600">Your Pathway to Bladder Health</p>
       </div>
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:gap-4 lg:gap-8 md:grid-cols-2 lg:grid-cols-3">
         {Object.entries(packages).map(([key, pkg]) => {
           const isSubscribe =
             packageStates[key as PackageOption].subscriptionType ===
@@ -121,8 +121,8 @@ export function Packages() {
               >
                 {pkg.label}
               </div>
-              <div className="p-4">
-                <h2 className="mb-2 text-center text-3xl font-extrabold text-gray-800">
+              <div className="py-5 px-1 sm:px-2 lg:px-4">
+                <h2 className="mb-2 text-center text-2xl md:text-3xl font-extrabold text-gray-800">
                   {pkg.title}
                 </h2>
                 <p className="mb-6 text-center font-semibold italic text-green-700">
@@ -150,7 +150,7 @@ export function Packages() {
                 </div>
 
                 <div className="mb-6 space-y-3">
-                  <label className="flex cursor-pointer items-center justify-between rounded-lg bg-gray-50 p-3">
+                  <label className="flex cursor-pointer items-center justify-between rounded-lg bg-gray-50 p-2 sm:p-3">
                     <div className="flex items-center">
                       <input
                         type="radio"
@@ -164,7 +164,7 @@ export function Packages() {
                         }
                         className="h-4 w-4 text-green-600"
                       />
-                      <span className="ml-2">Subscribe & Save 20%</span>
+                      <span className="text-base ml-2">Subscribe & Save 20%</span>
                     </div>
                     <span className="font-semibold text-green-700">
                       ${pkg.subscribePrice}{" "}

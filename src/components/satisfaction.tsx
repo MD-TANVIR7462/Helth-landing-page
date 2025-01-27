@@ -20,18 +20,14 @@ export function Satisfaction() {
           <h3 className="text-maroon text-xl font-bold md:text-2xl">
             You have nothing to lose!
           </h3>
-          <p className="mx-auto my-4 max-w-[600px] text-3xl font-bold md:my-5 md:text-4xl md:leading-[40px] lg:text-5xl lg:leading-[50px]">
+          <p className="mx-auto my-2 sm:my-3 max-w-[600px] text-2xl sm:text-3xl font-bold md:my-5 md:text-4xl md:leading-[40px] lg:text-4xl lg:leading-[50px]">
             100% satisfaction guaranteed on every order!
           </p>
-          <p className="my-4 text-center text-sm md:my-5 md:text-base lg:text-start">
-            At Snap Supplements we believe optimizing your health should be
-            simple. That's why we're committed to providing you with natural,
-            high-quality supplements made with only the purest and carefully
-            selected superfoods, botanicals, vitamins, and minerals that have
-            been scientifically proven to produce real results.
+          <p className="text-center text-sm  my-5 md:text-base lg:text-start">
+          Expertly crafted for bladder health, our premium doctor-formulated blend combines clinically supported ingredients to enhance bladder control, promote urinary comfort, and ensure quality and efficacy backed by scientific research.
           </p>
           <div className="flex flex-col items-center gap-4 md:gap-5 lg:items-start">
-            <SalesBadge className="w-full max-w-xs" />
+            <SalesBadge className="w-full max-w-[340px]" />
             <CartBadge />
             <div className="flex flex-col items-center gap-3 lg:flex-row">
               <AddToCartButton />

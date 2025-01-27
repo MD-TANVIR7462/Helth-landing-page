@@ -3,13 +3,13 @@ import { config } from "../config";
 export function WhyUrinaryFormula() {
   return (
     <section className="relative overflow-hidden bg-[#FAF3E1] py-4 md:py-8 mt-12 md:mt-16 xl:mt-20;">
-      <h3 className="text-maroon text-balance pb-4 text-center text-4xl font-black md:text-[39px] lg:text-4xl  ">Why Advanced Urinary Formula?</h3>
-      <p className="font-semibold text-balance pb-4 text-center text-2xl text-black md:text-[34px]">
+      <h3 className="title-no text-[#B11E54] !important">Why Advanced Urinary Formula?</h3>
+      <p className="px font-semibold pb-2 md:pb-4 text-center text-xl sm:text-2xl text-black md:text-[34px]  ">
         Harness the Power of Advanced
         <br />
         Urinary Formula
       </p>
-      <p className="mx-auto max-w-[65ch] text-pretty  text-center font-semibold leading-relaxed text-black md:text-xl px-3">
+      <p className="mx-auto max-w-[40ch] sm:max-w-[55ch] md:max-w-[65ch] text-pretty  text-[15px] text-center  text-black font-semibold md:text-xl px-3">
         Becasue it's A Guaranteed Remedy that helps RE-BUILD your bladder
         muscles from the Inside out.
       </p>
@@ -19,11 +19,11 @@ export function WhyUrinaryFormula() {
           <div className="relative">
             <div className="absolute -right-24 -top-24 h-[500px] w-[500px] rounded-full bg-white/50 blur-3xl"></div>
             <div className="absolute -bottom-24 -right-24 h-[400px] w-[400px] rounded-full bg-orange-100/40 blur-3xl"></div>
-            <div className="relative flex justify-center items-center ">
+            <div className="relative flex justify-center  items-center m ">
               <img
                 src="/images/whyadvance.png"
                 alt="Urinary Formula Product"
-                className="relative z-10  "
+                className="w-[300px] md:w-auto"
               />
             </div>
           </div>

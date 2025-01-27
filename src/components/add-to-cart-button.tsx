@@ -12,12 +12,12 @@ export function AddToCartButton({ className }: Readonly<AddToCartButtonProps>) {
     >
       Add To Cart
       <img
-        className="absolute right-[2.125em] z-10"
+        className="absolute right-[2.15em] z-10"
         src="/icons/icon-add-to-cart-button.svg"
         alt=""
       />
 <span
-    className="absolute border-[2px] border-dashed border-yellow-500 right-[-1px] top--1 flex h-[calc(100%+1.8px)]  w-[3.5em] items-center justify-center rounded-r-inherit bg-[#ffffe2] px-4 font-semibold rounded-md text-neutral-dark"
+    className="absolute border-[2px] border-dashed border-yellow-500 right-[-5px] top--1 flex h-[calc(100%+1.7px)]  w-[4em] items-center justify-center rounded-r-inherit bg-[#ffffe2] px-4 font-semibold rounded-md text-neutral-dark text-lg"
   >
     FREE
   </span>

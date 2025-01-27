@@ -10,11 +10,11 @@ export function Banner() {
   return (
     <section className=" full-width grid-containerxl  bg-[#FAF3E1] ">
       <div className="lg:gird-cols-2 relative  grid items-center justify-center justify-items-center gap-y-0 py-14 pt-10 text-center md:gap-x-10 md:gap-y-5 md:text-start lg:grid-cols-[80%_1fr] xl:grid-cols-[75%_1fr] lg:justify-items-start mx-0 lg:mx-3 xl:mx-0">
-        <div className="mb-6 md:my-0 flex flex-wrap items-center justify-center gap-x-3 rounded-full border bg-white px-4 py-2 text-sm font-bold shadow-lg md:py-1 md:text-base">
+        <div className="mb-6 md:my-0 flex flex-wrap items-center justify-center gap-x-3 rounded-full border bg-white px-4 py-2 text-sm font-semibold md:font-bold shadow-lg md:py-1 md:text-base ">
           <span className="flex items-center ">
             {Array.from({ length: 5 }).map((_, index) => (
               <IoMdStar
-                className="-ms-1 size-[1.675rem] text-[#e5c729]"
+                className="-ms-1 size-5 md:size-[1.675rem] text-[#e5c729]"
                 key={`star${index}`}
               />
             ))}
@@ -22,10 +22,10 @@ export function Banner() {
           <span>4.7/5 stars</span>
           <span>859 verified reviews</span>
         </div>
-        <p className="max-w-[92%] md:max-w-[70%]  lg:max-w-[75%] xl:max-w-[80%] text-wrap text-[1.6rem] md:text-[34px] font-black  text-[#8e2253] md:col-start-1 lg:text-[44px] lg:leading-[1.25] text-center lg:text-start">
+        <p className="max-w-[99%] md:max-w-[80%]  lg:max-w-[90%] xl:max-w-[80%] text-wrap text-[1.5rem]   md:text-[34px] font-black  text-[#8e2253] md:col-start-1 lg:text-[40px] xl:text-[44px] lg:leading-[1.25] text-center lg:text-start">
         <span className="text-black">THE BLADDER-</span>BUILDING SUPER NUTRIENT <span className="text-black">FOR LEAK-FREE DAYS</span> AND RESTFUL NIGHTS!
         </p>
-        <p className="col-span-full max-w-[60ch] lg:max-w-[55ch] xl:max-w-[70ch] text-pretty text-[1.1rem] font-semibold leading-relaxed lg:col-span-1 lg:row-start-3 text-center lg:text-start">
+        <p className="text-[15px] md:text-base xl:text-lg col-span-full  lg:max-w-[55ch] xl:max-w-[63ch] text-pretty font-semibold leading-relaxed lg:col-span-1 lg:row-start-3 text-center lg:text-start">
           If bladder problems have you stressed, frustrated, and embarrassed
           then it might be time to try this remedy you can try at home. It’s
           natural, affordable and works day and night.
@@ -37,7 +37,7 @@ export function Banner() {
                 <GiCheckMark  
                 className=" size-[15px] md:size-5 xl:size-6 p-1  bg-[#04C515] border-red-300   rounded-[4px] text-white " />
               </div>
-              <span className="text-base lg:text-[16px] xl:text-[17px]">{offering}</span>
+              <span className="text-sm lg:text-[15px] xl:text-lg">{offering}</span>
             </li>
           ))}
         </ul>
@@ -46,14 +46,14 @@ export function Banner() {
 
         <AddToCartButton className="col-span-full row-start-4 md:row-start-4 lg:col-span-1 lg:col-start-1 lg:row-start-7" />
         <OffersBadge className="col-span-full row-start-5 md:row-start-5 lg:col-span-1 lg:col-start-1 lg:row-start-8 my-6 md:my-0"  />
-        <div className="right-0 top-1/2 row-start-3 max-w-[40rem] md:row-start-3 lg:col-start-2  lg:row-start-1 lg:absolute lg:row-span-8 lg:w-[min(52vw,_45rem)] lg:max-w-none lg:-translate-y-1/2">
+        <div className="right-0 top-1/2 row-start-3 max-w-[40rem] md:max-w-[42rem] md:row-start-3 lg:col-start-2  lg:row-start-1 lg:absolute lg:row-span-8 lg:w-[min(45vw,_40rem)] lg:max-w-none lg:-translate-y-1/2">
           <img
-            className="h-auto  max-h-[55vh] w-full py-5   object-cover object-center md:max-h-[65vh] lg:max-h-[80vh] xl:h-[700px]"
+            className="object-center object-cover p-5"
             src="/images/hero-2.png"
             alt="banner image"
           />
         </div>
-        <picture className="left-[35%] lg:left-[40%] xl:left-[35%] top-[42%] xl:top-[40%] col-span-full max-w-[16rem] lg:absolute lg:max-w-20 ">
+        <picture className="mt-4 md:mt-0 left-[35%] lg:left-[45%] xl:left-[41%] top-[44%] xl:top-[42%] col-span-full  max-w-[16rem] lg:absolute lg:max-w-[6%] xl:max-w-20 ">
           <source
             media="(min-width:64rem)"
             srcSet="/icons/icon-manufacturer-vertical.webp"

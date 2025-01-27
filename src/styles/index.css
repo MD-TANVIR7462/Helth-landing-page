@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 
 
@@ -43,13 +43,16 @@
     @apply text-[#B11E54];
   }
   .title {
-    @apply text-balance pb-4 text-center text-2xl font-black md:text-[39px] lg:text-4xl text-black;
+    @apply text-balance pb-4 text-center text-3xl font-bold  md:text-[39px] lg:text-4xl text-black;
+  }
+  .title-no {
+    @apply text-balance pb-4 text-center text-3xl font-bold  md:text-[39px] lg:text-4xl;
   }
   .p-fit {
     @apply px-4 md:px-2 lg:px-0;
   }
   .test {
-    @apply md:ring-2 md:ring-red-500 lg:ring-4 lg:ring-green-500 xl:ring-4 xl:ring-yellow-600;
+    @apply md:ring-2 md:ring-red-500 lg:ring-4 lg:ring-green-500 xl:ring-4 xl:ring-blue-600 2xl:ring-yellow-600;
   }
   .secGap {
     @apply my-12 md:my-16 xl:my-20;

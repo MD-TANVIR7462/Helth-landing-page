@@ -5,7 +5,7 @@ import { OffersBadge } from "./offers-badge";
 const EcoHelth = () => {
   return (
     <section className="secGap flex flex-col items-center justify-center">
-      <h2 className="text-balance pb-4 text-center text-2xl font-black md:text-4xl">
+      <h2 className="text-balance pb-4 text-center text-[20px] sm:text-2xl font-black md:text-4xl">
         Try Eco Health® Advanced Urinary Formula Risk Free for 90 Days
       </h2>
       <span className="flex max-w-2xl flex-col items-center justify-center gap-4">

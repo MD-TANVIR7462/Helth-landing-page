@@ -5,7 +5,7 @@ export function TheSolution() {
   return (
     <section className="p-fit mx-auto max-w-[100%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-7xl">
       <h3 className="title">The Solution</h3>
-      <p className="mx-auto max-w-[65ch] text-pretty px-2 pb-6 text-center font-semibold leading-relaxed md:text-lg">
+      <p className="mx-auto max-w-full md:max-w-[65ch] text-pretty px-2 pb-6 lg:pb-0 text-center font-meduim leading-relaxed text-[15px] md:text-lg ">
         Bye, Buy Bladder Leaks, accidents, discomfort and worries with Eco
         Health's Advance Urinary Formula. Doctor Formulated with clincaly
         studied ingredients. Guaranteed to Work!
@@ -23,9 +23,9 @@ export function TheSolution() {
               className="flex items-start gap-x-2 text-pretty leading-relaxed"
             >
               <span>
-                <IoIosCheckmarkCircle className="size-9 text-[#4BAE4F]" />
+                <IoIosCheckmarkCircle className="size-7 md:size-9 text-[#4BAE4F]" />
               </span>
-              <p className="text-xl md:text-2xl">{solution}</p>
+              <p className="text-lg sm:text-xl md:text-2xl">{solution}</p>
             </li>
           ))}
         </ul>

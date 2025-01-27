@@ -9,8 +9,8 @@ const Ingredients = () => {
   ];
   return (
     <section className="secGap mx-auto max-w-7xl">
-      <h2 className="title leading-8 my-3 md:my-[4] lg:my-5">
-        <span className="text-[#B11E54]">NATURES BEST INGREDIENTS</span>
+      <h2 className="text-balance pb-4 text-center text-[22px] sm:text-2xl font-black md:text-4xl  my-3 md:my-[4] lg:my-5">
+        <span className=" text-[#B11E54]">NATURES BEST INGREDIENTS</span>
         <br />
         <span>Harness the power of nature’s best</span>
        <span className=" md:block ">ingredients</span>
