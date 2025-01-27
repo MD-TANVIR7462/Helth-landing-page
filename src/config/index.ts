@@ -32,11 +32,11 @@ export const config = {
     "Padded underwear and diapers",
   ],
   solutions: [
-    "Complete Control of your Bladder",
     "Feel totally empty after using the bathroom",
     "No more burning or instant urge to urinate,",
     "Well rested, energetic after sleeping through the night",
     "Wear regular underwear with confidence",
+    "Complete Control of your Bladder",
   ],
   whyUrinaryFormula: [
     {

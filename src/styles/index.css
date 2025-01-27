@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 @layer base {
   @font-face {
@@ -44,12 +45,9 @@
   }
 
   body {
-    @apply bg-white font-source-sans-pro text-neutral-dark;
+    font-family: 'Montserrat', sans-serif;
   }
 
-  * {
-    /* border: 1px solid red; */
-  }
 }
 
 @layer utilities {
@@ -90,7 +88,7 @@
     @apply text-[#B11E54];
   }
   .title {
-    @apply text-balance pb-4 text-center text-4xl font-black md:text-[44px] lg:text-5xl;
+    @apply text-balance pb-4 text-center text-2xl font-black md:text-[39px] lg:text-4xl text-black;
   }
   .p-fit {
     @apply px-4 md:px-2 lg:px-0;
@@ -100,5 +98,8 @@
   }
   .secGap {
     @apply my-12 md:my-16 xl:my-20;
+  }
+  .color-green {
+    @apply bg-[#244442];
   }
 }

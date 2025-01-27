@@ -1,18 +1,18 @@
 export function WhyItWorks() {
   return (
-    <section className="p-fit mx-auto max-w-7xl">
+    <section className=" mx-auto secGap  max-w-[100%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-7xl ">
       <h2 className="title">Why It Works</h2>
       <h2 className="mx-auto max-w-[65ch] text-pretty px-2 pb-8 text-center font-semibold leading-relaxed md:text-lg">
       Harness the Power of Nature’s Best Ingredients
       </h2>
-      <div className="mx-auto mt-2 grid items-center gap-8 lg:grid-cols-2">
+      <div className="mx-auto mt-2 grid items-center gap-8 lg:grid-cols-2 px-5">
         <img
           className="h-full rounded-lg object-cover object-center lg:row-span-2"
           src="/images/img-why-it-works-section.webp"
           alt=""
         />
         <div>
-          <h3 className="pb-2 text-2xl font-bold sm:text-3xl lg:pb-4">
+          <h3 className="pb-2 text-xl font-bold sm:text-3xl lg:pb-4">
             Advanced Urinary Formula
           </h3>
           <p className="text-pretty leading-relaxed">
@@ -23,7 +23,7 @@ export function WhyItWorks() {
           </p>
         </div>
         <div className="lg:col-start-2">
-          <h3 className="pb-2 text-2xl font-bold sm:text-3xl lg:pb-4">
+          <h3 className="pb-2 text-xl font-bold sm:text-3xl lg:pb-4">
             Doctor Formulated and Premium Ingredients
           </h3>
           <p className="text-pretty leading-relaxed">

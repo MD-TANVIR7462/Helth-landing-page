@@ -2,9 +2,9 @@ import { config } from "../config";
 
 export function WhyUrinaryFormula() {
   return (
-    <section className="relative overflow-hidden bg-[#FAF3E1] py-4 md:py-8">
-      <h3 className="text-maroon title">Why Advanced Urinary Formula?</h3>
-      <p className="text-semibold text-balance pb-4 text-center text-2xl text-black md:text-[34px]">
+    <section className="relative overflow-hidden bg-[#FAF3E1] py-4 md:py-8 mt-12 md:mt-16 xl:mt-20;">
+      <h3 className="text-maroon text-balance pb-4 text-center text-4xl font-black md:text-[39px] lg:text-4xl  ">Why Advanced Urinary Formula?</h3>
+      <p className="font-semibold text-balance pb-4 text-center text-2xl text-black md:text-[34px]">
         Harness the Power of Advanced
         <br />
         Urinary Formula
@@ -15,21 +15,16 @@ export function WhyUrinaryFormula() {
       </p>
       <div className="absolute inset-0 mt-5 bg-gradient-to-b from-white/10 to-transparent"></div>
       <div className="mx-auto mt-8 max-w-7xl px-4">
-        <div className="relative grid items-center gap-8 md:grid-cols-2 lg:gap-16">
+        <div className="relative grid items-center gap-8 md:grid-cols-2 lg:gap-1">
           <div className="relative">
             <div className="absolute -right-24 -top-24 h-[500px] w-[500px] rounded-full bg-white/50 blur-3xl"></div>
             <div className="absolute -bottom-24 -right-24 h-[400px] w-[400px] rounded-full bg-orange-100/40 blur-3xl"></div>
-            <div className="relative aspect-square">
+            <div className="relative flex justify-center items-center ">
               <img
-                src="/images/multiple-bottle.png"
+                src="/images/whyadvance.png"
                 alt="Urinary Formula Product"
-                className="relative z-10 h-full w-full object-cover"
+                className="relative z-10  "
               />
-              <div className="absolute -right-4 top-1/2 z-20 -translate-y-1/2 rounded-full bg-white px-6 py-2 shadow-lg">
-                <p className="text-sm font-bold text-[#8e2253]">
-                  Over Half A Million Sold! ⭐
-                </p>
-              </div>
             </div>
           </div>
           <div className="z-10 space-y-8">
@@ -41,7 +36,7 @@ export function WhyUrinaryFormula() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-[#8e2253]">
+                  <h3 className="text-xl font-bold ">
                     {item.title}
                   </h3>
                   <p className="leading-relaxed text-gray-700">

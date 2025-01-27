@@ -92,12 +92,12 @@ export function Packages() {
   };
 
   return (
-    <div className="mx-auto max-w-7xl bg-white px-4 py-12 mt-3">
-      <div className="mb-12 text-center">
-        <h1 className="title">
+    <div className="mx-auto max-w-7xl bg-white px-4 secGap">
+      <div className="mb-4 md:mb-12 text-center">
+        <h1 className="text-balance pb-2 md:pb-4 text-center text-2xl font-black md:text-[39px] lg:text-4xl text-black">
           Choose Your Package
         </h1>
-        <p className="text-xl text-gray-600">Your Pathway to Bladder Health</p>
+        <p className="text-md md:text-xl text-gray-600">Your Pathway to Bladder Health</p>
       </div>
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {Object.entries(packages).map(([key, pkg]) => {

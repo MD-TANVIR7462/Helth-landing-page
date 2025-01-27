@@ -5,18 +5,11 @@ export function TheProblem() {
   return (
 
 <section className="p-fit mx-auto secGap  max-w-[100%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-7xl  ">
-      <h2 className="title text-brand-maroon">BYE BYE BLADDER </h2>
+      <h2 className="title">The Problem</h2>
       <p className="mx-auto max-w-[65ch] text-pretty px-2 pb-6 lg:pb-0 text-center font-semibold leading-relaxed md:text-lg">
-      Accidents - Discomfort - Leaks - Embarrassment
-
+      As we age, the intricate network of muscles surrounding the bladder weakens often leading these problems.
       </p>
       <div className="grid gap-6 mt-2 md:mt-12 lg:gap-8 lg:grid-cols-2 lg:items-center justify-center items-center">
-      {/* <div className="grid grid-cols-1 md:grid-cols-2"> */}
-      {/* <img
-          className="rounded-lg w-[70%] md:w-[82%] border md:h-[95%] mx-auto"
-          src="/images/girl.png"
-          alt="problem section image"
-        /> */}
         <img
           className="rounded-lg w-full md:w-[100%] h-full md:h-[95%] mx-auto"
           src="/images/problempic.png"
