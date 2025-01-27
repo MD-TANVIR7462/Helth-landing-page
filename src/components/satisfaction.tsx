@@ -27,7 +27,7 @@ export function Satisfaction() {
           Expertly crafted for bladder health, our premium doctor-formulated blend combines clinically supported ingredients to enhance bladder control, promote urinary comfort, and ensure quality and efficacy backed by scientific research.
           </p>
           <div className="flex flex-col items-center gap-4 md:gap-5 lg:items-start">
-            <SalesBadge className="w-full max-w-[340px]" />
+            <SalesBadge className="w-full max-w-[360px] text-center" />
             <CartBadge />
             <div className="flex flex-col items-center gap-3 lg:flex-row">
               <AddToCartButton />
