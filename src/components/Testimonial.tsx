@@ -30,7 +30,7 @@ export function TestimonialSection() {
                   />
                 ))}
               </div>
-              <p className="max-w-[60ch] text-[12px] font-semibold leading-relaxed  sm:text-base md:text-sm lg:max-w-[55ch] lg:font-bold">
+              <p className="max-w-[60ch] text-[12px] font-semibold leading-relaxed text-white md:text-black sm:text-base md:text-sm lg:max-w-[55ch] lg:font-bold">
                 "Since using Advanced Urinary Formula, I've regained control and
                 confidence. Fewer urgent trips to the bathroom, better sleep,
                 and peace of mind — it's been life-changing!" — Sarah T.

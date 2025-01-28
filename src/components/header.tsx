@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BsCart3, BsHeadset, BsTruck } from "react-icons/bs";
+import { BsCart3, BsHeadset } from "react-icons/bs";
 import {
   FaArrowRight,
   FaChevronLeft,
