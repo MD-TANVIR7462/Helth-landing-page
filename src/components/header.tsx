@@ -106,7 +106,7 @@ export function Header() {
                       className={`flex items-center gap-2 whitespace-nowrap text-[12px] sm:text-sm font-bold capitalize ${slides[currentSlide].icon === FaPhoneAlt && "hover:underline"}`}
                     >
                       {React?.createElement(slides[currentSlide].icon, {
-                        className: "size-4",
+                        className: "size-4 sm:size-5",
                       })}
                       {slides[currentSlide].text}
                     </a>
