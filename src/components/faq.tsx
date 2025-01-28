@@ -1,8 +1,5 @@
 import * as Accordion from "@radix-ui/react-accordion";
 import { IoChevronDown } from "react-icons/io5";
-import { AddToCartButton } from "./add-to-cart-button";
-import { CartBadge } from "./cart-badge";
-import { OffersBadge } from "./offers-badge";
 
 const faqs = [
   {
@@ -48,7 +45,7 @@ const faqs = [
 
 export function Faq() {
   return (
-    <section className=" secGap  p-fit">
+    <section className=" mb-8 md:mb-12 xl:mb-16  mt-7 p-fit">
       <h2 className="text-balance pb-10 text-center text-2xl font-black md:text-[39px] lg:text-4xl text-black ">
         Frequently Asked Questions
       </h2>
@@ -74,11 +71,7 @@ export function Faq() {
           </Accordion.Item>
         ))}
       </Accordion.Root>
-      <div className="grid justify-items-center gap-6 secGap ">
-        <CartBadge />
-        <AddToCartButton />
-        <OffersBadge/>
-      </div>
+    
     </section>
   );
 }

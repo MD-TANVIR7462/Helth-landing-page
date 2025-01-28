@@ -122,7 +122,7 @@ export function Header() {
             </div>
           </div>
           <div className="color-green">
-            <div className="relative mx-auto flex min-h-[70px] max-w-7xl items-center justify-end px-4 py-3 text-white lg:py-1">
+            <div className="relative mx-auto flex min-h-[52px] sm:min-h-[60px] md:min-h-[70px] max-w-7xl items-center justify-end px-4 py-3 text-white lg:py-1">
               <a
                 className="absolute right-1/2 translate-x-1/2 p-1 text-2xl focus:ring"
                 href="#"

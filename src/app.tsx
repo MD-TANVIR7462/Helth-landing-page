@@ -9,6 +9,7 @@ import Ingredients from "./components/ingredients";
 import { Packages } from "./components/packages";
 import { Satisfaction } from "./components/satisfaction";
 import SellingFast from "./components/sellingFast";
+import SubSection from "./components/SubSection";
 import { TestimonialSection } from "./components/Testimonial";
 import { TheProblem } from "./components/the-problem";
 import { TheSolution } from "./components/the-solution";
@@ -34,6 +35,7 @@ export function App() {
       <Packages />
       <SellingFast />
       <Faq />
+      <SubSection/>
       <CustomerReviews />
       <HaveAquestion />
       <Footer />

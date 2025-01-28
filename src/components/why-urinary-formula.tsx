@@ -64,10 +64,10 @@ export function WhyUrinaryFormula() {
                     <p className="leading-relaxed text-gray-700">
                       make the copy say this…Our unique blend includes premium
                       ingredients which helps strengthen pelvic muscles and
-                      improve urinary ow. Studies show that Horsetail Extract
+                      improve urinary flow. Studies show that Horsetail Extract
                       can{" "}
                       <span className="text-gray-800 underline">
-                        increase urinary ow by 15%
+                        increase urinary flow by 15%
                       </span>
                       {" "}after 6 weeks.
                     </p>

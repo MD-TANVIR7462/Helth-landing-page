@@ -1,3 +1,6 @@
+import { BsCart3 } from "react-icons/bs";
+
+
 function HaveAquestion() {
   return (
     <div className="secGap relative mx-auto w-full bg-[url(/images/calltoactionbg.png)] text-white">
@@ -7,26 +10,36 @@ function HaveAquestion() {
             {/* Left section with text */}
             <div className="order-2 space-y-6 text-left lg:order-1">
               <div className="space-y-2">
-                <h1 className="text-xl font-bold leading-tight md:text-3xl">
+                <h1 className="text-xl font-bold leading-tight lg:text-2xl">
                   Have Questions? We're Here to Help!
                 </h1>
-                <p className="text-xl md:text-3xl">
-                  Call us at <a href="tel:(844) -640-0728" className="text-green-500 ">(844) -640-0728</a> for answers.
+                <p className="text-xl lg:text-2xl">
+                  Call us at{" "}
+                  <a href="tel:(844) -640-0728" className="text-green-500">
+                    (844) -640-0728
+                  </a>{" "}
+                  for answers.
                 </p>
               </div>
 
               <div className="space-y-3">
-                <p className="max-w-[400px] text-xl md:text-2xl">
+                <p className="max-w-[400px] text-[15px] leading-8 md:text-[20px]">
                   Act quickly—these are selling fast! 🔥 43 sold in the past
                   hour.
                 </p>
-                <p className="max-w-[400px] text-[18px] leading-8 md:text-[22px]">
+                <p className="max-w-[400px] text-[15px] leading-8 md:text-[20px]">
                   Stock is limited due to high demand, so availability cannot be
                   guaranteed.
                 </p>
               </div>
-              <button className="rounded-full bg-[#B11E54] px-6 py-3 text-sm font-bold text-white sm:px-8 sm:py-4 sm:text-base md:px-16 md:text-lg ">
+              <button className="relative z-10 flex h-12 w-[16rem] transform items-center rounded-lg border border-none border-brand-maroon bg-brand-maroon px-3 text-sm font-semibold text-white transition-all duration-100 ease-in-out hover:scale-100 active:scale-[98%]">
                 Claim It Before It's Gone!
+                <img
+                  className="absolute right-[1.6em] z-10"
+                  src="/icons/icon-add-to-cart-button.svg"
+                  alt=""
+                />
+                <span className="rounded-r-inherit absolute right-[-14px] top--1 flex h-[calc(100%+.2px)] w-[4em] transform items-center justify-center rounded-md border-[1.5px] border-dashed border-yellow-500 bg-[#ffffe2] px-4 text-lg font-semibold text-neutral-dark transition-all duration-100 ease-in-out hover:scale-100 active:scale-[94%]"><BsCart3 className="h-5 w-5 ms-4 text-maroon font-bold"/> </span>
               </button>
             </div>
 
