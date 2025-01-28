@@ -5,10 +5,9 @@ export function TheSolution() {
   return (
     <section className="p-fit mx-auto max-w-[100%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-7xl pb-2">
       <h3 className="title">The Solution</h3>
-      <p className="mx-auto max-w-full md:max-w-[65ch] text-pretty px-2 pb-6 lg:pb-0 text-center font-meduim leading-relaxed text-[15px] md:text-lg ">
-        Bye, Buy Bladder Leaks, accidents, discomfort and worries with Eco
-        Health's Advance Urinary Formula. Doctor Formulated with clincaly
-        studied ingredients. Guaranteed to Work!
+      <h3 className="text-balance py-1 text-center text-lg font-bold  md:text-[22px] lg:text-[25px]  text-red-600">BYE BYE BLADDER</h3>
+      <p className="mx-auto max-w-full md:max-w-[65ch] text-pretty px-2 pb-6 lg:pb-0 text-center font-meduim leading-relaxed text-[15px] md:text-lg mb-2">
+      Accidents - Discomfort - Leaks - Embarrassment
       </p>
       <div className="grid gap-6 md:gap-8 lg:grid-cols-2 lg:items-center">
         <img

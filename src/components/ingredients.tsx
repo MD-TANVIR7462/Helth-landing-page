@@ -12,7 +12,7 @@ const Ingredients = () => {
       <h2 className="text-balance pb-4 text-center text-[22px] sm:text-2xl font-black md:text-4xl  my-3 md:my-[4] lg:my-5">
         <span className=" text-[#B11E54]">NATURES BEST INGREDIENTS</span>
         <br />
-        <span>Harness the power of nature’s best</span>
+        <span>Harness the Power of the highest quality</span>
        <span className=" md:block ">ingredients</span>
       </h2>
 

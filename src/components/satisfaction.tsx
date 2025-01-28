@@ -7,7 +7,7 @@ export function Satisfaction() {
     <div className="bg-[#FAF3E1]">
       <section className="mx-auto my-0 grid max-w-7xl place-items-center justify-items-center p-5 lg:grid-cols-2 lg:gap-12 lg:p-8 xl:p-5">
         {/* Image Section */}
-        <div className="relative order-first mx-auto flex aspect-square max-w-[370px] items-center justify-center md:order-first md:max-w-[500px] lg:order-last lg:max-w-[600px]">
+        <div className=" relative order-first mx-auto flex  max-w-[370px] items-center justify-center md:order-first md:max-w-[500px] lg:order-last ">
           <img
             className="h-full w-full  object-cover"
             src="/images/hero-2.png"

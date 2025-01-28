@@ -42,14 +42,12 @@ export const config = {
     {
       icon: "/icons/Vector.svg",
       title: "Reduces Urgency and Frequency",
-      description:
-        "Formulated to alleviate the common discomforts of frequent and urgent urination, with ingredients like Pumpkin Seed Extract shown to reduce urinary urgency by up to 50% after 12 weeks of use",
+      description: "",
     },
     {
       icon: "/icons/Group2.svg",
       title: "Supports Bladder Strength",
-      description:
-        "Our unique blend includes premium ingredients such asPumpkin Seed Extract and Horsetail, which help strengthen pelvic oor muscles and improve urinary ow. Studies show that Horsetail Extract can increase urinary ow by 15% after 6 weeks",
+      description: "support_blader",
     },
     {
       icon: "/icons/Group.svg",

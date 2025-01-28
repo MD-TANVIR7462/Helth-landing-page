@@ -137,7 +137,7 @@ export function Packages() {
                       ? pkg.perBottleSubscribe
                       : pkg.perBottleOnetime}
                   </div>
-                  <p className="font-bold">Per canister</p>
+                  <p className="font-bold">Per bottle</p>
                   {pkg.regularly && (
                     <div className="text-[20px] font-semibold text-gray-400">
                       Regularly

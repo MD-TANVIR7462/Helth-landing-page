@@ -2,14 +2,16 @@ import { config } from "../config";
 
 export function WhyUrinaryFormula() {
   return (
-    <section className="relative overflow-hidden bg-[#FAF3E1] py-5 sm:py-4 md:py-8 mt-12 md:mt-16 xl:mt-20 ">
-      <h3 className="title-no text-[#B11E54] !important">Why Advanced Urinary Formula?</h3>
-      <p className="px font-semibold pb-2 md:pb-4 text-center text-xl sm:text-2xl text-black md:text-[34px]  ">
+    <section className="relative mt-12 overflow-hidden bg-[#FAF3E1] py-5 sm:py-4 md:mt-16 md:py-8 xl:mt-20">
+      <h3 className="title-no !important text-[#B11E54]">
+        Why Advanced Urinary Formula?
+      </h3>
+      <p className="px pb-2 text-center text-xl font-semibold text-black sm:text-2xl md:pb-4 md:text-[34px]">
         Harness the Power of Advanced
         <br />
         Urinary Formula
       </p>
-      <p className="mx-auto max-w-[40ch] sm:max-w-[55ch] md:max-w-[65ch] text-pretty  text-[15px] text-center  text-black font-semibold md:text-xl px-3">
+      <p className="mx-auto max-w-[40ch] text-pretty px-3 text-center text-[15px] font-semibold text-black sm:max-w-[55ch] md:max-w-[65ch] md:text-xl">
         Becasue it's A Guaranteed Remedy that helps RE-BUILD your bladder
         muscles from the Inside out.
       </p>
@@ -19,7 +21,7 @@ export function WhyUrinaryFormula() {
           <div className="relative">
             <div className="absolute -right-24 -top-24 h-[500px] w-[500px] rounded-full bg-white/50 blur-3xl"></div>
             <div className="absolute -bottom-24 -right-24 h-[400px] w-[400px] rounded-full bg-orange-100/40 blur-3xl"></div>
-            <div className="relative flex justify-center  items-center m ">
+            <div className="m relative flex items-center justify-center">
               <img
                 src="/images/whyadvance.png"
                 alt="Urinary Formula Product"
@@ -36,12 +38,40 @@ export function WhyUrinaryFormula() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold ">
-                    {item.title}
-                  </h3>
-                  <p className="leading-relaxed text-gray-700">
-                    {item.description}
-                  </p>
+                  <h3 className="text-xl font-bold">{item.title}</h3>
+
+                  {item.description !== "" &&
+                  item.description !== "support_blader" ? (
+                    <p className="leading-relaxed text-gray-700">
+                      {item.description}
+                    </p>
+                  ) : (
+                    <p className="leading-relaxed text-gray-700">
+                      {item.description !== "support_blader" && (
+                        <span>
+                          Formulated to alleviate the common discomforts of
+                          frequent and urgent urination, with ingredients like
+                          Pumpkin Seed Extract shown to after{" "}
+                          <span className="text-gray-800 underline">
+                            reduce urinary urgency by up to 50%
+                          </span>
+                          {" "}12 weeks of use
+                        </span>
+                      )}
+                    </p>
+                  )}
+                  {item.description == "support_blader" && (
+                    <p className="leading-relaxed text-gray-700">
+                      make the copy say this…Our unique blend includes premium
+                      ingredients which helps strengthen pelvic muscles and
+                      improve urinary ow. Studies show that Horsetail Extract
+                      can{" "}
+                      <span className="text-gray-800 underline">
+                        increase urinary ow by 15%
+                      </span>
+                      {" "}after 6 weeks.
+                    </p>
+                  )}
                 </div>
               </div>
             ))}
