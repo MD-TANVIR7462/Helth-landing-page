@@ -1,10 +1,48 @@
 import { useState, useEffect } from "react";
-import { BsCart3 } from "react-icons/bs";
-import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
-import { motion } from "framer-motion";
+import { BsCart3, BsHeadset, BsTruck } from "react-icons/bs";
+import {
+  FaArrowRight,
+  FaChevronLeft,
+  FaChevronRight,
+  FaPhoneAlt,
+  FaTruck,
+} from "react-icons/fa";
+import { BiSolidBadgeCheck } from "react-icons/bi";
+import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+
+const slides = [
+  {
+    text: "Need Assistance? (844)-640-0728",
+    link: "tel:(844)-640-0728",
+    icon: FaPhoneAlt,
+  },
+  {
+    text: "90 Day Money Back Guarantee",
+    link: "#",
+    icon: BiSolidBadgeCheck,
+  },
+  {
+    text: "Free Shipping on orders over $50",
+    link: "#",
+    icon: FaTruck,
+  },
+  {
+    text: "Top Notch Customer Support ",
+    link: "#",
+    icon: BsHeadset,
+  },
+  {
+    text: "Fast Delivery ",
+    link: "#",
+    icon: FaTruck,
+  },
+];
+
 export function Header() {
   const [isScrollingDown, setIsScrollingDown] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,6 +61,22 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
   return (
     <>
       {/* Top green navbar - shows when scrolling up */}
@@ -32,21 +86,37 @@ export function Header() {
         }`}
       >
         <div className="w-full">
-          <div className="min-h-[1.875rem] bg-[#EFEFE9] text-center text-brand-green">
+          <div className="min-h-[1.875rem] overflow-hidden bg-[#EFEFE9] text-center text-brand-green">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-4">
-              <button className="outline-none">
+              <button className="outline-none" onClick={prevSlide}>
                 <FaChevronLeft className="size-[0.875rem] opacity-75 hover:scale-105 hover:opacity-100" />
               </button>
-              <div className="group flex flex-wrap items-center justify-center gap-x-2 py-1 hover:cursor-pointer hover:underline">
-                <a
-                  href="tel:(844)-640-0728"
-                  className="font-bold capitalize "
-                >
-                  Need Assistance? (844)-640-0728
-                </a>
-                <FaArrowRight className="size-[0.875rem] transition-transform group-hover:translate-x-[1px]" />
+              <div className="relative w-[95%] md:w-[80%] overflow-hidden">
+                <AnimatePresence mode="wait">
+                  <motion.div
+                    key={currentSlide}
+                    initial={{ x: 100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: -100, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className={`group flex flex-wrap items-center justify-center gap-x-2 py-1 hover:cursor-pointer`}
+                  >
+                    <a
+                      href={slides[currentSlide].link}
+                      className={`flex items-center gap-2 whitespace-nowrap text-[12px] sm:text-sm font-bold capitalize ${slides[currentSlide].icon === FaPhoneAlt && "hover:underline"}`}
+                    >
+                      {React?.createElement(slides[currentSlide].icon, {
+                        className: "size-4",
+                      })}
+                      {slides[currentSlide].text}
+                    </a>
+                    {slides[currentSlide].icon === FaPhoneAlt && (
+                      <FaArrowRight className="size-[0.875rem] transition-transform group-hover:translate-x-[1px]" />
+                    )}
+                  </motion.div>
+                </AnimatePresence>
               </div>
-              <button className="outline-none">
+              <button className="outline-none" onClick={nextSlide}>
                 <FaChevronRight className="size-[0.875rem] opacity-75 hover:scale-105 hover:opacity-100" />
               </button>
             </div>
@@ -102,7 +172,7 @@ export function Header() {
 
               <a
                 href="#"
-                className="flex items-center gap-2 justify-center text-xl font-bold md:hidden"
+                className="flex items-center justify-center gap-2 text-xl font-bold md:hidden"
               >
                 <img
                   className="h-[52px] w-auto"
