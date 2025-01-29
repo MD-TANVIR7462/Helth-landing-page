@@ -1,6 +1,5 @@
 import { BsCart3 } from "react-icons/bs";
 import { twMerge } from "tailwind-merge";
-
 type CartBadgeProps = React.HTMLAttributes<HTMLDivElement>;
 
 export function CartBadge({ className }: Readonly<CartBadgeProps>) {

@@ -5,7 +5,6 @@ const brandLogos = [
   "/icons/icon-muscle-and-fitness.svg",
   "/icons/icon-mens-journal.svg",
 ] as const;
-
 export function AsSeenIn() {
   return (
     <section className="py-20">
