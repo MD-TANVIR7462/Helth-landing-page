@@ -35,7 +35,7 @@ export function TestimonialSection() {
               </p>
             </div>
             {/* Button */}
-            <div className="relative rounded-xl border border-dashed border-brand-maroon py-1 text-[12px] font-bold text-white sm:px-4 sm:text-[13px] md:px-2 lg:w-[350px] lg:px-3 lg:text-[15px]">
+            <div className="relative rounded-xl border border-dashed border-brand-maroon py-1 text-[12px] font-bold text-white px-4 sm:text-[13px] md:px-2 lg:w-[350px] lg:px-3 lg:text-[15px]">
               Selling fast, HURRY!
               <span className="text-maroon"> 43 sold in last hour!</span>
               <span className="absolute -right-[0.5em] -top-[0.75em] text-3xl">
