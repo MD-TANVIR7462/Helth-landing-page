@@ -5,7 +5,7 @@ export const config = {
     "Strengthen Pelvic & Bladder Function Long Term*",
     "Promote Healthy Urinary Tract Function*",
     "Enjoy Greater Comfort and Condence in Daily Life*",
-    "Reduce Nighttime Disruptions for Better Sleep*",
+    "Reduce Night time Disruptions for Better Sleep*",
   ],
   packages: [
     {

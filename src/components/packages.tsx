@@ -272,23 +272,6 @@ export function Packages() {
   });
 
   const packages = {
-    "3plus2": {
-      title: "Buy 3, Get 2 FREE!",
-      label: "Best Value",
-      subscribePrice: 119.88,
-      onetimePrice: 149.85,
-      perBottleSubscribe: 23.31,
-      perBottleOnetime: 29.97,
-      savingsSubscribe: "$129.87",
-      savingsOnetime: "$99.90",
-      delivery: "every 5 months",
-      deliveryOptions: ["every 75 days", "every 5 months"],
-      regularPrice: 49.95,
-      fakePrice:249.75,
-      topColor: "bg-[#e0c62f]",
-      textColor: "text-white",
-      image: "/images/package2.png",
-    },
     "2plus1": {
       title: "Buy 2, Get 1 FREE!",
       label: "Great Value",
@@ -301,10 +284,27 @@ export function Packages() {
       delivery: "every 3 months",
       deliveryOptions: ["every 45 days", "every 3 months"],
       regularPrice: 49.95,
-      fakePrice:149.85,
+      fakePrice: 149.85,
       topColor: "bg-[#C0C0C0]",
       textColor: "text-white",
       image: "/images/package3.png",
+    },
+    "3plus2": {
+      title: "Buy 3, Get 2 FREE!",
+      label: "Best Value",
+      subscribePrice: 119.88,
+      onetimePrice: 149.85,
+      perBottleSubscribe: 23.31,
+      perBottleOnetime: 29.97,
+      savingsSubscribe: "$129.87",
+      savingsOnetime: "$99.90",
+      delivery: "every 5 months",
+      deliveryOptions: ["every 75 days", "every 5 months"],
+      regularPrice: 49.95,
+      fakePrice: 249.75,
+      topColor: "bg-[#e0c62f]",
+      textColor: "text-white",
+      image: "/images/package2.png",
     },
     "1bottle": {
       title: "1 Bottle",
@@ -314,11 +314,11 @@ export function Packages() {
       perBottleSubscribe: 39.96,
       perBottleOnetime: 49.95,
       savingsSubscribe: "$9.99",
-      savingsOnetime: "Bundle to Save",
+      savingsOnetime: null,
       delivery: "every month",
       deliveryOptions: ["every month", "every 2 months", "every 3 months"],
       regularPrice: 49.95,
-      fakePrice:249.75,
+      fakePrice: 249.75,
       topColor: "bg-[#CD7F32]",
       textColor: "text-white",
       image: "/images/package1.png",
@@ -343,14 +343,14 @@ export function Packages() {
   };
 
   return (
-    <div className="secGap mx-auto max-w-5xl xl:max-w-7xl bg-white px-4">
+    <div className="secGap mx-auto max-w-5xl bg-white px-4 xl:max-w-7xl">
       <div className="mb-4 text-center md:mb-12">
         <h1 className="title">Choose Your Package</h1>
         <p className="text-md text-gray-600 md:text-xl">
           Your Pathway to Bladder Health
         </p>
       </div>
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 md:gap-4 lg:grid-cols-2 xl:grid-cols-3 lg:gap-10  xl:gap-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 md:gap-4 lg:grid-cols-2 lg:gap-10 xl:grid-cols-3 xl:gap-8">
         {Object.entries(packages).map(([key, pkg]) => {
           const isSubscribe =
             packageStates[key as PackageOption].subscriptionType ===
@@ -373,11 +373,15 @@ export function Packages() {
                   {pkg.title}
                 </h2>
                 <p className="mb-6 text-center font-semibold italic text-green-700">
-                  {isSubscribe
+                  {isSubscribe 
                     ? `Instant savings: ${pkg.savingsSubscribe}`
-                    : `${pkg.savingsOnetime}`}
+                    : pkg.savingsOnetime!==null ?`Instant savings: ${pkg.savingsOnetime}`:`Bundle to Save`}
                 </p>
-                <img src={pkg?.image} alt="" className="mx-auto h-[250px] mb-4" />
+                <img
+                  src={pkg?.image}
+                  alt=""
+                  className="mx-auto mb-4 h-[250px] w-ful"
+                />
                 <div className="mb-6 text-center">
                   <div className="text-5xl font-bold text-gray-900">
                     $
@@ -418,15 +422,13 @@ export function Packages() {
                       ${pkg.subscribePrice}{" "}
                       <span className="font-normal text-gray-500 line-through">
                         {" "}
-                        ${pkg?.fakePrice
-                        }
+                        ${pkg?.fakePrice}
                       </span>
                     </span>
                   </label>
                   {isSubscribe && (
                     <div className="relative ml-6">
                       <select
-                  
                         value={selectedDeliveryOption}
                         onChange={(e) =>
                           handleDeliveryChange(
@@ -434,20 +436,23 @@ export function Packages() {
                             e.target.value,
                           )
                         }
-                        className="w-full appearance-none rounded border border-gray-200 p-2 pr-10 focus:border-gray-400 cursor-pointer"
+                        className="w-full cursor-pointer appearance-none rounded border border-gray-200 p-2 pr-10 focus:border-gray-400"
                       >
                         {pkg.deliveryOptions.map((option) => (
-                          <option key={option} value={option} className="cursor-pointer">
+                          <option
+                            key={option}
+                            value={option}
+                            className="cursor-pointer"
+                          >
                             Delivery {option}
                           </option>
                         ))}
                       </select>
                       {/* Arrow Icon */}
                       <div
-                        className={`pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 transform transition-transform duration-300 `}
+                        className={`pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 transform transition-transform duration-300`}
                       >
-                       <IoIosArrowDown className="h-5 w-5 text-blue-700"/>
-                     
+                        <IoIosArrowDown className="h-5 w-5 text-blue-700" />
                       </div>
                     </div>
                   )}
@@ -479,7 +484,7 @@ export function Packages() {
                 </div>
 
                 <button
-                  className={`w-full rounded-lg ${pkg.topColor} px-4 py-3 text-lg font-semibold text-white transition-colors hover:bg-opacity-90 lg:text-xl active:scale-[98%] scale-100 `}
+                  className={`w-full rounded-lg ${pkg.topColor} scale-100 px-4 py-3 text-lg font-semibold text-white transition-colors hover:bg-opacity-90 active:scale-[98%] lg:text-xl`}
                 >
                   ADD TO CART
                 </button>

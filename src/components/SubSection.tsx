@@ -4,7 +4,7 @@ import { OffersBadge } from "./offers-badge";
 
 const SubSection = () => {
   return (
-    <div className="bg-[#FAF3E1] py-8 md:py-10 xl:py-12 ">
+    <div className="bg-[#FAF3E1] py-8 md:py-10 xl:py-12 mb-3 md:mb-6 lg:mb-10">
       <div className="grid justify-items-center gap-6">
         <CartBadge />
         <AddToCartButton />

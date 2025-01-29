@@ -62,7 +62,7 @@ export function WhyUrinaryFormula() {
                   )}
                   {item.description == "support_blader" && (
                     <p className="leading-relaxed text-gray-700">
-                      make the copy say this…Our unique blend includes premium
+                      Our unique blend includes premium
                       ingredients which helps strengthen pelvic muscles and
                       improve urinary flow. Studies show that Horsetail Extract
                       can{" "}

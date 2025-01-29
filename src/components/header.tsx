@@ -226,7 +226,7 @@ export function Header() {
       </nav>
 
       {/* Spacer to prevent content from jumping */}
-      <div className="h-[calc(1.4rem+5rem)]"></div>
+      <div className="h-[calc(1.4rem+3.8rem)] md:h-[calc(1.4rem+5rem)]"></div>
     </>
   );
 }

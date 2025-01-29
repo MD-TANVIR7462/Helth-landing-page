@@ -10,11 +10,11 @@ export function Banner() {
   return (
     <section className=" full-width grid-containerxl  bg-[#FAF3E1] ">
       <div className="lg:gird-cols-2 relative  grid items-center justify-center justify-items-center gap-y-0 py-14 pt-10 text-center md:gap-x-10 md:gap-y-5 md:text-start lg:grid-cols-[80%_1fr] xl:grid-cols-[75%_1fr] lg:justify-items-start mx-0 lg:mx-3 xl:mx-0">
-        <div className="mb-6 md:my-0 flex flex-wrap items-center justify-center gap-x-3 rounded-full border bg-white px-4 py-2 text-sm font-semibold md:font-bold shadow-lg md:py-1 md:text-base ">
+        <div className="mb-6 md:my-0 flex flex-wrap items-center justify-center gap-2 sm:gap-x-3 rounded-full border bg-white px-3 sm:px-4 py-2 text-xs font-semibold md:font-bold shadow-lg md:py-1  sm:text-base ">
           <span className="flex items-center ">
             {Array.from({ length: 5 }).map((_, index) => (
               <IoMdStar
-                className="-ms-1 size-5 md:size-[1.675rem] text-[#e5c729]"
+                className="-ms-1 size-4 sm:size-5 md:size-[1.675rem] text-[#e5c729]"
                 key={`star${index}`}
               />
             ))}

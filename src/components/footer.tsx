@@ -36,10 +36,10 @@ export function Footer() {
             <a href="mailto:support@myecohealth.com">support@myecohealth.com</a>
           </div>
         </div>
-        <p className="max-w-[65ch] leading-relaxed opacity-60 italic">
+        <p className="max-w-[65ch] leading-relaxed text-[#a5a5a5] italic">
           *These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Caution: If you are pregnant, nursing, or taking medications, consult your physician before use. Keep out of reach of children
         </p>
-        <span className="opacity-60 mb-7 md:mb-1 italic">
+        <span className="text-[#a5a5a5] mb-7 md:mb-1 italic">
           © {new Date().getFullYear()} ECO HEALTH. All Rights Reserved
 
         </span>

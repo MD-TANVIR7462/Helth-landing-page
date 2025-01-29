@@ -1,25 +1,22 @@
 import { twMerge } from "tailwind-merge";
-import { AddToCartButton } from "./add-to-cart-button";
 import { Star } from "lucide-react";
+import { Link } from "react-scroll";
 
 export function TestimonialSection() {
   return (
-    <div className="secGap  mx-auto max-w-7xl lg:px-0">
+    <div className="secGap mx-auto max-w-7xl lg:px-0">
       <div
         className={twMerge(
-          "relative bg-[url('/images/Bgherooo2.png')] bg-cover bg-center bg-no-repeat px-2 py-12 text-center  shadow-lg sm:px-6 md:bg-[url('/images/Bgherooo1.png')] md:px-12 md:py-16"
+          "w-full bg-[url('/images/Bgherooo2.png')] bg-cover bg-center bg-no-repeat object-fill px-2 py-12 md:pt-12 text-center shadow-lg md:bg-[url('/images/Bgherooo1.png')] lg:px-4 lg:pt-14 xl:px-2 xl:pt-12",
         )}
       >
-        {/* Black Overlay */}
-        <div className="absolute inset-0 bg-black opacity-[12%]"></div>
-
         {/* Content (Stacked above the overlay) */}
-        <div className="relative grid gap-3 md:grid-cols-12">
+        <div className="grid md:grid-cols-12 lg:gap-3">
           {/* First Div: 2fr */}
-          <div className="sm:col-span-1 lg:col-span-2"></div>
+          <div className="sm:col-span-1 lg:col-span-3"></div>
 
           {/* Second Div: 4fr */}
-          <div className="col-span-7 mx-auto flex max-w-3xl flex-col items-center gap-5 lg:col-span-6">
+          <div className="col-span-7 mx-auto flex max-w-3xl flex-col items-center gap-4 lg:col-span-6 xl:gap-7">
             {/* Paragraph */}
             <div className="grid justify-items-center">
               <div className="mb-3 flex items-center gap-1">
@@ -30,31 +27,45 @@ export function TestimonialSection() {
                   />
                 ))}
               </div>
-              <p className="max-w-[60ch] text-[12px] font-semibold leading-relaxed text-white md:text-black sm:text-base md:text-[17px] italic lg:max-w-[55ch] lg:font-bold">
+              <p className="text-[14px] sm:text-[15px] max-w-[60ch] md:max-w-full font-semibold italic leading-relaxed  md:text-[16px] text-black lg:text-[17px] lg:font-bold xl:text-[21px]">
                 "Since using Advanced Urinary Formula, I've regained control and
                 confidence. Fewer urgent trips to the bathroom, better sleep,
-                and peace of mind — it's been life-changing!" — Sarah T.
+                and peace of mind — it's been life-changing!" —{" "}
+                <span className="font-normal not-italic">Sarah T.</span>
               </p>
             </div>
             {/* Button */}
-            <div className="relative rounded-xl border border-dashed border-brand-maroon px-3 py-1 text-[12px] font-bold text-white sm:px-4 sm:text-[13px] md:w-[350px] md:text-[15px]">
+            <div className="relative rounded-xl border border-dashed border-brand-maroon py-1 text-[12px] font-bold text-white sm:px-4 sm:text-[13px] md:px-2 lg:w-[350px] lg:px-3 lg:text-[15px]">
               Selling fast, HURRY!
               <span className="text-maroon"> 43 sold in last hour!</span>
               <span className="absolute -right-[0.5em] -top-[0.75em] text-3xl">
                 🔥
               </span>
             </div>
-            <AddToCartButton />
+            <Link
+              to="packages"
+              smooth={true}
+              duration={500}
+              offset={-50}
+              className="relative z-10 flex h-12 w-[16em] transform cursor-pointer items-center
+               justify-center rounded-lg border border-none border-brand-maroon bg-brand-maroon px-4 text-xl 
+               font-bold text-white transition-all duration-100 ease-in-out hover:scale-100 active:scale-[98%]"
+            >
+              Add To Cart
+              <img
+                className="absolute right-[2.14em] z-10"
+                src="/icons/icon-add-to-cart-button.svg"
+                alt=""
+              />
+              <span className="rounded-r-inherit absolute right-[-5px] top--1 flex h-[calc(100%)] w-[4em] transform items-center justify-center rounded-md border-[1px] border-dashed border-yellow-500 bg-[#ffffe2] px-4 text-lg font-semibold text-neutral-dark transition-all duration-100 ease-in-out hover:scale-100 active:scale-[98%]">
+                FREE
+              </span>
+            </Link>
           </div>
 
           {/* Third Div: 4fr */}
-          <div className="relative mt-5 hidden md:col-span-4 md:grid lg:col-span-4">
-            <img
-              src="/images/getupto.png"
-              alt=""
-              className="left-1/2 top-[-60px] w-[120px] -translate-x-1/2 transform md:absolute lg:w-[115px] xl:w-[130px]"
-            />
-            <img src="/images/2bottle.png" alt="Product Image" />
+          <div className="hidden md:col-span-4 md:grid lg:col-span-3 xl:w-[300px]">
+            <img src="/images/testimonialbottles.png" alt="Product Image" />
           </div>
         </div>
       </div>
