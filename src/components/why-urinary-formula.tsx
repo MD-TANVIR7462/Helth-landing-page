@@ -12,7 +12,7 @@ export function WhyUrinaryFormula() {
         Urinary Formula
       </p>
       <p className="mx-auto max-w-[40ch] text-pretty px-3 text-center text-[15px] font-semibold text-black sm:max-w-[55ch] md:max-w-[65ch] md:text-xl">
-        Becasue it's A Guaranteed Remedy that helps RE-BUILD your bladder
+        Because it's A Guaranteed Remedy that helps RE-BUILD your bladder
         muscles from the Inside out.
       </p>
       <div className="absolute inset-0 mt-5 bg-gradient-to-b from-white/10 to-transparent"></div>

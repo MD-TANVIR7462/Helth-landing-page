@@ -53,7 +53,7 @@ export const config = {
       icon: "/icons/Group.svg",
       title: "Promotes Urinary Tract Health",
       description:
-        "Features natural components like Punarnava (Boerhaavia Diffusa) and Soy Germ Extract, which support urinary tract health by reducing inammation and providing hormonal balance, particularly benecial for women.",
+        "Features natural components like Punarnava (Boerhaavia Diffusa) and Soy Germ Extract, which support urinary tract health by reducing inammation and providing hormonal balance, particularly beneficial for women.",
     },
   ],
 } as const;

@@ -10,6 +10,7 @@ import {
 import { BiSolidBadgeCheck } from "react-icons/bi";
 import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
+import { Link } from "react-scroll";
 
 const slides = [
   {
@@ -204,6 +205,7 @@ export function Header() {
               </div>
             </div>
             <div className="flex items-center gap-4 sm:gap-6">
+              <Link to="packages" smooth={true} duration={500}  offset={-50}>
               <motion.button
                 className="flex items-center gap-2 rounded-md bg-[#28A745] px-4 py-2 text-xs font-medium text-white shadow-lg transition-colors hover:bg-[#218838] sm:px-6 sm:py-2 sm:text-sm"
                 whileHover={{ scale: 1.2 }}
@@ -220,13 +222,14 @@ export function Header() {
               >
                 <span className="text-[18px] font-bold">Add To Cart</span>
               </motion.button>
+              </Link>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Spacer to prevent content from jumping */}
-      <div className="h-[calc(1.4rem+3.8rem)] md:h-[calc(1.4rem+5rem)]"></div>
+      <div className="h-[calc(1.4rem+3rem)] md:h-[calc(1.4rem+5rem)]"></div>
     </>
   );
 }
