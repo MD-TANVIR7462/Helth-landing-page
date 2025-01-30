@@ -71,7 +71,7 @@ export function Packages() {
       delivery: "every month",
       deliveryOptions: ["every month", "every 2 months", "every 3 months"],
       regularPrice: 49.95,
-      fakePrice: 249.75,
+      fakePrice: 49.95,
       topColor: "bg-[#CD7F32]",
       textColor: "text-white",
       image: "/images/package1.png",
